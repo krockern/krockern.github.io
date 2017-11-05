@@ -1,0 +1,72 @@
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+	height: 100%;
+	width: 75%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 20px;
+}
+
+.navbar {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	position: fixed;
+    width: 100%;
+    z-index: 1;
+	top: 0;
+	padding: 10px;
+}
+
+.navbar-home {
+	float: left;
+}
+
+.navbar-right {
+	float: right;
+}
+
+/* Initial dropdown-menu */
+.dropdown-menu {
+  
+	height: 100%;
+	position: fixed;
+	width: 200px;
+}
+
+.dropdown-menu ul {
+	border-top: 1px solid #636366;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.dropdown-menu li {
+	border-left: 1px solid #636366;
+	border-right: 1px solid #636366;
+	border-bottom: 1px solid #636366;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 45px;
+	padding-bottom: 3px;
+	padding-left: 20px;
+	padding-top: 3px;
+}
+
+.dropdown-toggle {
+	height: 50px;
+	width: 50px;
+	/*position: right;*/
+}
+
+.page-title h1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 50px;
+}
+
+.page-title h4{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+}
