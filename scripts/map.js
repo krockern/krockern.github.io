@@ -30,7 +30,7 @@ function initMap() {
 			'<h4 id="firstHeading" class="firstHeading">Maj</h4>'+
 			'<div id="bodyContent">'+
 				'<div style="float:left; width:160px;"><img src="pics/Maj.jpg" alt="Maj" style="width:150px; align:center;"></div>' +
-				'<div style="paddingLeft:5px"><p>Statyn <b>Maj</b> i Danderyd är en broms staty, ca. två meter hög på en marmorsockel.</p>'+
+				'<div style="paddingLeft:5px"><p>Statyn <b>Maj</b> i Danderyd är en bromsstaty, ca. två meter hög på en marmorsockel.</p>'+
 				'<p>Maj finns även i Strykjärnsparken, Söderhamn och Skolparken, Vilhelmina</p></div>'+
 			'</div>'+
 		'</div>';
