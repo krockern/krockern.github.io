@@ -9,8 +9,11 @@ function initMap() {
 		center: centerStart
 	});
 	
-	//Staty utanför NH i Linköping
-
+	
+	
+	/**************************
+	 * Staty utanför NH i Linköping
+	 **************************/
 	var statue_001_coordinates = {lat: 58.412363, lng: 15.616854};
 
 	var statue_001_marker = new google.maps.Marker({
@@ -19,8 +22,11 @@ function initMap() {
 		title: 'Staty i Linköping'
 	});
 	
-	//Maj i Danderyd
-	//59.395572, 18.037009
+	
+	
+	/**************************
+	 *Maj i Danderyd
+	 **************************/
 	var maj_danderyd_coordinates = {lat: 59.395572, lng: 18.037009};
 	
 	var maj_danderyd_contentString = 
@@ -31,7 +37,8 @@ function initMap() {
 			'<div id="bodyContent">'+
 				'<div style="float:left; width:160px;"><img src="pics/Maj.jpg" alt="Maj" style="width:150px; align:center;"></div>' +
 				'<div style="paddingLeft:5px"><p>Statyn <b>Maj</b> i Danderyd är en bromsstaty, ca. två meter hög på en marmorsockel.</p>'+
-				'<p>Maj finns även i Strykjärnsparken, Söderhamn och Skolparken, Vilhelmina</p></div>'+
+				'<p>Maj finns även i Strykjärnsparken, Söderhamn och Skolparken, Vilhelmina</p>' + 
+				'<p><a href="https://www.google.com/maps/search/?api=1&query=59.395572,18.037009">Hitta hit</a></p></div>'+
 			'</div>'+
 		'</div>';
 	  
@@ -49,7 +56,11 @@ function initMap() {
 		maj_danderyd_infowindow.open(map, maj_danderyd_marker);
 	});
 	
-	//Härjedalens Fjällmuseum
+	
+	
+	/**************************
+	 * Härjedalens Fjällmuseum
+	 **************************/
 	var harjedalens_fjallmuseum_coordinates = {lat: 62.548326, lng: 12.537803};
 	
 	var harjedalens_fjallmuseum_contentString = 
@@ -61,6 +72,7 @@ function initMap() {
 				'en del av <b>Emil Näsvalls</b> verk.</p>'+
 				'<p>Fjällmuseets hemsida är <a href="http://kommun.herjedalen.se/fjallmuseet.4.7a231afd12424b40e2880001097.html">' +
 				'http://kommun.herjedalen.se/fjallmuseet.4.7a231afd12424b40e2880001097.html</a></p>'+
+				'<p><a href="https://www.google.com/maps/search/?api=1&query=62.548326,12.537803">Hitta hit</a></p>'
 			'</div>'+
 		'</div>';
 	  
