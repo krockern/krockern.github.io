@@ -1,6 +1,11 @@
-var infowindow;
-	
-	
+/************************************
+* This JS will create a map with markers
+* It will also create and manage the info window for the markers
+************************************/
+
+//----------------------Content text for the info windows-------------------------
+//----------------------------------Start-----------------------------------------
+
 //----------------------
 // Staty utanför NH i Linköping
 //----------------------
@@ -37,9 +42,10 @@ var harjedalens_fjallmuseum_contentString =
 			'<p><a href="https://www.google.com/maps/search/?api=1&query=62.548326,12.537803">Hitta hit</a></p>'
 		'</div>'+
 	'</div>';
-	    
-	
-var centerStart = {lat: 62.415, lng: 15.143};
+
+//----------------------Content text for the info windows-------------------------
+//-----------------------------------End------------------------------------------
+
 	
 // Add new markers here:
 // [marker title, latitude, longitude, content in infowindow]
@@ -48,7 +54,19 @@ var markers = [
 	['Maj i Danderyd', 59.395572, 18.037009, maj_danderyd_contentString],
 	['Härjedalens Fjällmuseum', 62.548326, 12.537803, harjedalens_fjallmuseum_contentString]
 ];
-	
+
+
+//Global vars
+var infowindow;
+
+//Center the map at creation here
+var centerStart = {lat: 62.415, lng: 15.143};
+
+
+
+/******
+* Create the map
+******/
 function initMap() {
 	
 	var options = {
@@ -58,60 +76,55 @@ function initMap() {
 	};
 	var map = new google.maps.Map(document.getElementById('map'), options);
 
-	setMarkers(map,markers);
+	setMarkers(map,markers);	
+}
 	
-}	
-	
-	
+/******
+* Create and position the markers
+* 
+******/
 function setMarkers(map,markers){
 
 	var marker, i;
 
 	for (i = 0; i < markers.length; i++){  
 
+		//Setup marker info
 		var markerTitle = markers[i][0]
 		var markerLat = markers[i][1]
 		var markerLong = markers[i][2]
 		var markerContent =  markers[i][3]
 
+		//Create coordinates in google map format
 		latlngset = new google.maps.LatLng(markerLat, markerLong);
 
+		//Create marker
 		var marker = new google.maps.Marker({  
 			map: map, title: markerTitle , position: latlngset  
 		});
 		map.setCenter(marker.getPosition());
 
-		//map.addMarker(createMarker(markerTitle, latlngset, markerContent));
-		//var content = "Loan Number: " + loan +  '</h3>' + "Address: " + add     
-
-		//var infowindow = new google.maps.InfoWindow();
-
+		//If the marker is clicked - create a infowindow
 		google.maps.event.addListener(marker,'click', (function(marker,markerContent,infowindow){
 				
 			return function() {
 				
-				if (infowindow) infowindow.close();
-				infowindow = new google.maps.InfoWindow();
-				infowindow.setContent(markerContent);
-				infowindow.open(map,marker);
+				openInfowindow(map, marker, markerContent); //Needed to lift out the closing and opening of infowindow to a seperate function so only one infowindow is open at a given time
+				
 			};
-		})(marker,markerContent,infowindow)); 
-
+		})(marker,markerContent,infowindow));
 	}
 }
-  
- /* function createMarker(markerTitle, latlngset, markerContent){
-	var marker=new google.maps.Marker({
-		position: latlngset, map: map, title: markerTitle
-	});
-	
-	google.maps.event.addListener(marker,"click",function(){
-		if(infowindow)infowindow.close();
-		
-		infowindow=new google.maps.InfoWindow({content:markerContent});
-		infowindow.open(map,marker);
-	});
-	
-	return marker;}*/
-	
+ 
+/******
+* Close any open infowindow
+* and open a new one at the marker
+*******/ 
+function openInfowindow(map, marker, markerContent) {
+	if (infowindow) infowindow.close();
+	infowindow = new google.maps.InfoWindow();
+	infowindow.setContent(markerContent);
+	infowindow.open(map,marker);
+} 
 
+ 
