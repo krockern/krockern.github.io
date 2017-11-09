@@ -9,7 +9,7 @@
 //----------------------
 // Staty utanför NH i Linköping
 //----------------------
-var statue_001_contentString = '';
+var statue_001_contentString = null;
 	
 //----------------------
 // Maj i Danderyd
@@ -103,16 +103,18 @@ function setMarkers(map,markers){
 			map: map, title: markerTitle , position: latlngset  
 		});
 		map.setCenter(marker.getPosition());
-
+		
+		if (markerContent!=null) {
 		//If the marker is clicked - create a infowindow
-		google.maps.event.addListener(marker,'click', (function(marker,markerContent,infowindow){
-				
-			return function() {
-				
-				openInfowindow(map, marker, markerContent); //Needed to lift out the closing and opening of infowindow to a seperate function so only one infowindow is open at a given time
-				
-			};
-		})(marker,markerContent,infowindow));
+			google.maps.event.addListener(marker,'click', (function(marker,markerContent,infowindow){
+					
+				return function() {
+					
+					openInfowindow(map, marker, markerContent); //Needed to lift out the closing and opening of infowindow to a seperate function so only one infowindow is open at a given time
+					
+				};
+			})(marker,markerContent,infowindow));
+		}
 	}
 }
  
