@@ -48,12 +48,17 @@ var harjedalens_fjallmuseum_contentString =
 //-----------------------------------End------------------------------------------
 
 	
-// Add new markers here:
-// [marker title, latitude, longitude, content in infowindow]
-var markers = [
-	['Staty i Linköping', 58.412363, 15.616854, statue_001_contentString],
-	['Maj i Danderyd', 59.395572, 18.037009, maj_danderyd_contentString],
-	['Härjedalens Fjällmuseum', 62.548326, 12.537803, harjedalens_fjallmuseum_contentString]
+// Add new locations here:
+// {lat: <latitude>, lng: <longitude>, title: <title of the marker>, info: <contentString>}
+
+var locations = [
+	{lat: 58.412363, lng: 15.616854, title: "Staty i Linköping", info: statue_001_contentString},
+	{lat: 59.395572, lng: 18.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString},
+	{lat: 62.548326, lng: 12.537803, title: "Härjedalens Fjällmuseum", info: harjedalens_fjallmuseum_contentString},
+	{lat: 59.594572, lng: 18.137009, title: "1", info: null},
+	{lat: 59.494572, lng: 18.237009, title: "2", info: null},
+	{lat: 59.294572, lng: 18.337009, title: "3", info: null},
+	{lat: 59.694572, lng: 18.437009, title: "4", info: null}
 ];
 
 
@@ -77,57 +82,40 @@ function initMap() {
 	};
 	var map = new google.maps.Map(document.getElementById('map'), options);
 
-	setMarkers(map,markers);	
+	setMarkers(map,locations);	
 }
 	
 /******
 * Create and position the markers
 * 
 ******/
-function setMarkers(map,markers){
+function setMarkers(map,locations){
 
-	var marker, i;
 
-	for (i = 0; i < markers.length; i++){  
-
-		//Setup marker info
-		var markerTitle = markers[i][0]
-		var markerLat = markers[i][1]
-		var markerLong = markers[i][2]
-		var markerContent =  markers[i][3]
-
-		//Create coordinates in google map format
-		latlngset = new google.maps.LatLng(markerLat, markerLong);
-
-		//Create marker
-		var marker = new google.maps.Marker({  
-			map: map, title: markerTitle , position: latlngset  
+	var infoWin = new google.maps.InfoWindow();
+	// Note: The code uses the JavaScript Array.prototype.map() method to
+	// create an array of markers based on a given "locations" array.
+	// The map() method here has nothing to do with the Google Maps API.
+	var markers = locations.map(function(location, i) {
+		var marker = new google.maps.Marker({
+			position: location,
+			title: location.title
 		});
-		map.setCenter(marker.getPosition());
-		
-		if (markerContent!=null) {
-		//If the marker is clicked - create a infowindow
-			google.maps.event.addListener(marker,'click', (function(marker,markerContent,infowindow){
-					
-				return function() {
-					
-					openInfowindow(map, marker, markerContent); //Needed to lift out the closing and opening of infowindow to a seperate function so only one infowindow is open at a given time
-					
-				};
-			})(marker,markerContent,infowindow));
+    
+		if (location.info!=null) {
+			google.maps.event.addListener(marker, 'click', function(evt) {
+				infoWin.setContent(location.info);
+				infoWin.open(map, marker);
+			})
 		}
-	}
-}
- 
-/******
-* Close any open infowindow
-* and open a new one at the marker
-*******/ 
-function openInfowindow(map, marker, markerContent) {
-	if (infowindow) infowindow.close();
-	infowindow = new google.maps.InfoWindow();
-	infowindow.setContent(markerContent);
-	infowindow.open(map,marker);
-} 
+		return marker;
+	});
 
- 
+	// Add a marker clusterer to manage the markers.
+	var markerCluster = new MarkerClusterer(map, markers, {
+		maxZoom: 6,
+		gridSize: 30,
+		imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+	});
+	
+} 
