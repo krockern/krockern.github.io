@@ -28,7 +28,7 @@ var per_albin_hansson_contentString =
 	'</div>';
 
 //----------------------
-// Maj i Danderyd
+// Maj, Danderyd
 //----------------------
 var maj_danderyd_contentString =
 	'<div id="content">'+
@@ -37,7 +37,7 @@ var maj_danderyd_contentString =
 		'<h4 id="firstHeading" class="firstHeading">Maj</h4>'+
 		'<div id="bodyContent">'+
 			'<div style="float:left; width:160px;"><a href="pages/maj.html"><img src="pics/maj-danderyd/256px-Emil_Näsvall_Maj.JPG" alt="Maj" style="width:150px; align:center;"></a></div>' +
-			'<div style="paddingLeft:5px"><p>Statyn <b>Maj</b> i Danderyd är en bromsstaty, ca. två meter hög på en marmorsockel.</p>'+
+			'<div style="paddingLeft:5px"><p>Statyn <b>Maj</b> i Danderyd är en bronsstaty, ca. två meter hög på en marmorsockel.</p>'+
 			'<p>Maj finns även i Strykjärnsparken, Söderhamn och Skolparken, Vilhelmina</p>' +
 			'<p>Klicka på bilden för mer information</p>' +
 			'<p><a href="https://www.google.com/maps/search/?api=1&query=59.395572,18.037009">Hitta hit</a></p></div>'+
