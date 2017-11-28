@@ -44,22 +44,28 @@
 		</div>
 
 		<!-- Slideshow on medium and small screens -->
-		<div class="w3-hide-large w3-display-container w3-modal-content w3-hide-small">
+		<div class="w3-hide-large w3-hide-medium w3-col l3 m6 w3-margin-bottom">
+			<div class="w3-display-container">
+				<img class="statues" src="pics/512px-skulptur_001_mod.png" style="width:100%">
+				<a href="pages/maj.html"><img class="statues" src="pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG" alt="Maj" style="width:100%"></a>
+				<a href="pages/per_albin_hansson.html"><img class="statues" src="pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG" alt="Per Albin Hansson" style="width:100%"></a>
 
-			<img class="statues w3-modal-content" src="pics/512px-skulptur_001_mod.png">
-			<a href="pages/maj.html"><img class="statues w3-modal-content" src="pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG" alt="Maj"></a>
-			<a href="pages/per_albin_hansson.html"><img class="statues w3-modal-content" src="pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG" alt="Per Albin Hansson"></a>
+				<button class="w3-button w3-display-left w3-black" onclick="statueSlideshow.previous()">&#10094;</button>
+				<button class="w3-button w3-display-right w3-black" onclick="statueSlideshow.next()">&#10095;</button>
 
-			<button class="w3-button w3-display-left w3-black" onclick="statueSlideshow.previous()">&#10094;</button>
-			<button class="w3-button w3-display-right w3-black" onclick="statueSlideshow.next()">&#10095;</button>
-
-			<script>
-				statueSlideshow = w3.slideshow(".statues", 5000);
-			</script>
+				<script>
+					statueSlideshow = w3.slideshow(".statues", 5000);
+				</script>
+			</div>
 		</div>
 
+
+
+
+
+
 		<!-- No slideshow on large screens -->
-		<div class="w3-hide-medium">
+		<div class="w3-hide-small">
 			<!-- Row with pictures -->
 			<div class="w3-row-padding">
 				<div class="w3-col l3 m6 w3-margin-bottom">
