@@ -18,9 +18,9 @@ var per_albin_hansson_contentString =
 	'<div id="content">'+
 		'<div id="siteNotice">'+
 		'</div>'+
-		'<h4 id="firstHeading" class="firstHeading">Per Albin Hansson</h4>'+
+		'<a href="pages/per_albin_hansson.html"><h4 id="firstHeading" class="firstHeading">Per Albin Hansson</h4></a>'+
 		'<div id="bodyContent">'+
-			'<div style="float:left; width:160px;"><a href="pages/per_albin_hansson.html"><img src="pics/per_albin_hansson/256px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG" alt="Per Albin Hansson" style="width:150px; align:center;"></a></div>' +
+			'<div class="infoviewImage" style="float:left; width:160px;"><a href="pages/per_albin_hansson.html"><img src="pics/per_albin_hansson/256px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG" alt="Per Albin Hansson" style="width:150px; align:center;"></a></div>' +
 			'<div style="paddingLeft:5px"><p>Byst av <b>Per Albin Hansson</b> i Parken Zoo i Eskilstuna</p>'+
 			'<p>Klicka på bilden för mer information</p>' +
 			'<p><a href="https://www.google.com/maps/search/?api=1&query=59.372830,16.482146">Hitta hit</a></p></div>'+
@@ -34,9 +34,9 @@ var maj_danderyd_contentString =
 	'<div id="content">'+
 		'<div id="siteNotice">'+
 		'</div>'+
-		'<h4 id="firstHeading" class="firstHeading">Maj</h4>'+
+		'<a href="pages/maj.html"><h4 id="firstHeading" class="firstHeading">Maj</h4></a>'+
 		'<div id="bodyContent">'+
-			'<div style="float:left; width:160px;"><a href="pages/maj.html"><img src="pics/maj-danderyd/256px-Emil_Näsvall_Maj.JPG" alt="Maj" style="width:150px; align:center;"></a></div>' +
+			'<div class="infoviewImage" style="float:left; width:160px;"><a href="pages/maj.html"><img src="pics/maj-danderyd/256px-Emil_Näsvall_Maj.JPG" alt="Maj" style="width:150px; align:center;"></a></div>' +
 			'<div style="paddingLeft:5px"><p>Statyn <b>Maj</b> i Danderyd är en bronsstaty, ca. två meter hög på en marmorsockel.</p>'+
 			'<p>Maj finns även i Strykjärnsparken, Söderhamn och Skolparken, Vilhelmina</p>' +
 			'<p>Klicka på bilden för mer information</p>' +
@@ -67,9 +67,9 @@ var harjedalens_fjallmuseum_contentString =
 		'<div id="content">'+
 			'<div id="siteNotice">'+
 			'</div>'+
-			'<h4 id="firstHeading" class="firstHeading">I sommarhagen</h4>'+
+			'<a href="pages/i_sommarhagen.html"><h4 id="firstHeading" class="firstHeading">I sommarhagen</h4></a>'+
 			'<div id="bodyContent">'+
-				'<div style="float:left; width:160px;"><a href="pages/i_sommarhagen.html"><img src="pics/i_sommarhagen/256px-I_sommarhagen.jpg" alt="Maj" style="width:150px; align:center;"></a></div>' +
+				'<div class="infoviewImage" style="float:left; width:160px;"><a href="pages/i_sommarhagen.html"><img src="pics/i_sommarhagen/256px-I_sommarhagen.jpg" alt="Maj" style="width:150px; align:center;"></a></div>' +
 				'<div style="paddingLeft:5px"><p>Statyn <b>I sommarhagen</b> står mellan två hus i Varberg</p>'+
 				'<p>Klicka på bilden för mer information</p>' +
 				'<p><a href="https://www.google.com/maps/search/?api=1&query=57.099466,12.248345">Hitta hit</a></p></div>'+
