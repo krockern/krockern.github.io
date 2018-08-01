@@ -33,7 +33,7 @@ function largescreenPics() {
     //Create slide div
     if (slide) {
       slideDiv = document.createElement("div");
-      slideDiv.className += "slideDiv_large";
+      slideDiv.className += "slideDiv_large fade";
       //Two rows
       //slideDiv.setAttribute("style", "height:1080px")
       //One row
@@ -114,7 +114,7 @@ function mediumscreenPics() {
     //Create slide div
     if (slide) {
       slideDiv = document.createElement("div");
-      slideDiv.className += "slideDiv_medium";
+      slideDiv.className += "slideDiv_medium fade";
       //Two rows
       //slideDiv.setAttribute("style", "height:1080px")
       //One row
@@ -186,7 +186,7 @@ function smallscreenPics() {
   for (let index = 0; index < picsList.length; ++index) {
 
     slideDiv = document.createElement("div");
-    slideDiv.className += "slideDiv_small";
+    slideDiv.className += "slideDiv_small fade";
     smallscreenDiv.appendChild(slideDiv);
 
     var anchor = document.createElement('a');
