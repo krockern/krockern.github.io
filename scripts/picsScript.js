@@ -1,22 +1,16 @@
-var picsList = [["Skulptur 1", "", "statues", "pics/512px-skulptur_001_mod.png","", "width:100%"],
+var picsList = [["Skulptur 1", "pages/blank.html", "statues", "pics/512px-skulptur_001_mod.png","", "width:100%"],
 ["Maj", "pages/maj.html", "statues" ,"pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", "Maj", "width:100%"],
-["Skulptur 1", "", "statues", "pics/512px-skulptur_001_mod.png","", "width:100%"],
+["Skulptur 1", "pages/blank.html", "statues", "pics/512px-skulptur_001_mod.png","", "width:100%"],
+["Per Albin Hansson", "pages/per_albin_hansson.html", "statues", "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", "Per Albin Hansson", "width:100%"],
 ["Per Albin Hansson", "pages/per_albin_hansson.html", "statues", "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", "Per Albin Hansson", "width:100%"],
 ["Maj", "pages/maj.html", "statues" ,"pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", "Maj", "width:100%"],
-["Per Albin Hansson", "pages/per_albin_hansson.html", "statues", "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", "Per Albin Hansson", "width:100%"],
-["Skulptur 1", "", "statues", "pics/512px-skulptur_001_mod.png","", "width:100%"],
+["Skulptur 1", "pages/blank.html", "statues", "pics/512px-skulptur_001_mod.png","", "width:100%"],
 ["Maj", "pages/maj.html", "statues" ,"pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", "Maj", "width:100%"],
-["Skulptur 1", "", "statues", "pics/512px-skulptur_001_mod.png","", "width:100%"],
+["Skulptur 1", "pages/blank.html", "statues", "pics/512px-skulptur_001_mod.png","", "width:100%"],
 ["Per Albin Hansson", "pages/per_albin_hansson.html", "statues", "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", "Per Albin Hansson", "width:100%"],
 ["Maj", "pages/maj.html", "statues" ,"pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", "Maj", "width:100%"],
 ["Per Albin Hansson", "pages/per_albin_hansson.html", "statues", "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", "Per Albin Hansson", "width:100%"]];
-/*[["Skulptur 1", "<img class=\"statues\" src=\"pics/512px-skulptur_001_mod.png\" style=\"width:100%\">"],
-["Maj", "<a href=\"pages/maj.html\"><img class=\"statues\" src=\"pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG\" alt=\"Maj\" style=\"width:100%\"></a>"],
-["Per Albin Hansson", "<a href=\"pages/per_albin_hansson.html\"><img class=\"statues\" src=\"pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG\" alt=\"Per Albin Hansson\" style=\"width:100%\"></a>"],
-["Maj", "<a href=\"pages/maj.html\"><img class=\"statues\" src=\"pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG\" alt=\"Maj\" style=\"width:100%\"></a>"],
-["Per Albin Hansson", "<a href=\"pages/per_albin_hansson.html\"><img class=\"statues\" src=\"pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG\" alt=\"Per Albin Hansson\" style=\"width:100%\"></a>"]];
-*/
-//var picName = ["Skulptur 1", "Maj", "Per Albin Hansson"];
+
 
 function largescreenPics() {
   var largescreenDiv = document.getElementById("largescreen");
@@ -34,10 +28,6 @@ function largescreenPics() {
     if (slide) {
       slideDiv = document.createElement("div");
       slideDiv.className += "slideDiv_large fade";
-      //Two rows
-      //slideDiv.setAttribute("style", "height:1080px")
-      //One row
-      //slideDiv.setAttribute("style", "height:px")
       largescreenDiv.appendChild(slideDiv);
 
       slide = false;
@@ -115,10 +105,6 @@ function mediumscreenPics() {
     if (slide) {
       slideDiv = document.createElement("div");
       slideDiv.className += "slideDiv_medium fade";
-      //Two rows
-      //slideDiv.setAttribute("style", "height:1080px")
-      //One row
-      //slideDiv.setAttribute("style", "height:px")
       mediumscreenDiv.appendChild(slideDiv);
 
       slide = false;
@@ -139,7 +125,7 @@ function mediumscreenPics() {
 
     }
       var picDiv1 = document.createElement("div");
-      picDiv1.className += "w3-col l3 m6 w3-margin-bottom";
+      picDiv1.className += "w3-col l3 m4 w3-margin-bottom"; //was m6
       rowDiv.appendChild(picDiv1);
 
       var picDiv2 = document.createElement("div");
@@ -165,7 +151,7 @@ function mediumscreenPics() {
       anchor.appendChild(image);
 
       //End row and do one more
-      if (col == 2) {
+      if (col == 3) { //with m6 use 2
         //Only do new row if there is more pics in the list
         if (index < (picsList.length - 1)) {
           newrow = true;
