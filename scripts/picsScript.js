@@ -56,7 +56,8 @@ function largescreenPics() {
       picDiv1.appendChild(picDiv2);
 
       var picDiv3 = document.createElement("div");
-      picDiv3.className += "w3-display-topleft w3-black w3-padding";
+      picDiv3.className += "w3-display-topleft w3-padding"; //w3-black
+      picDiv3.setAttribute("style", "color:#fff!important;background-color:rgba(0,0,0,0.5)!important");
       picDiv3.appendChild(document.createTextNode(picsList[index][0]));
       picDiv2.appendChild(picDiv3);
 
@@ -133,7 +134,8 @@ function mediumscreenPics() {
       picDiv1.appendChild(picDiv2);
 
       var picDiv3 = document.createElement("div");
-      picDiv3.className += "w3-display-topleft w3-black w3-padding";
+      picDiv3.className += "w3-display-topleft w3-black w3-padding"; // w3-black
+      picDiv3.setAttribute("style", "color:#fff!important;background-color:rgba(0,0,0,0.5)!important");
       picDiv3.appendChild(document.createTextNode(picsList[index][0]));
       picDiv2.appendChild(picDiv3);
 
