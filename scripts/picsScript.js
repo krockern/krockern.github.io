@@ -25,9 +25,11 @@ function picsGallery(rowSize) {
 
   var newrow = true;
   var col = 1;
+  var picsCount = 1;
 
+//  for (let index = 0; index < picsList.length; ++index) {
+  for (var key in picsList) {
 
-  for (let index = 0; index < picsList.length; ++index) {
     var rowDiv;
 
     if (newrow) {
@@ -54,34 +56,35 @@ function picsGallery(rowSize) {
     var picDiv3 = document.createElement("div");
     picDiv3.className += "w3-display-topleft w3-padding"; //w3-black
     picDiv3.setAttribute("style", "color:#fff!important;background-color:rgba(0,0,0,0.5)!important");
-    picDiv3.appendChild(document.createTextNode(picsList[index][0]));
+    //picDiv3.appendChild(document.createTextNode(picsList[index][0]));
+    picDiv3.appendChild(document.createTextNode(picsList[key].name));
     picDiv2.appendChild(picDiv3);
 
     var anchor = document.createElement('a');
-    anchor.setAttribute('href', "../" + picsList[index][1]);
+    anchor.setAttribute('href', "../" + picsList[key].pagesLoc);
     picDiv2.appendChild(anchor);
 
     //Image
     var image = document.createElement("img");
-    image.className += picsList[index][2];
-    image.setAttribute("src", "../" + picsList[index][3]);
-    image.setAttribute("alt", picsList[index][4]);
-    image.setAttribute("style", picsList[index][5]);
+    image.className += picsList[key].className;
+    image.setAttribute("src", "../" + picsList[key].imageLoc);
+    image.setAttribute("alt", picsList[key].altName);
+    image.setAttribute("style", picsList[key].imageWidth);
 
     anchor.appendChild(image);
 
     //Image text
     var imageText = document.createElement("div");
     var imageTextPar = document.createElement("p");
-    imageTextPar.appendChild(document.createTextNode(picsList[index][6]));
+    imageTextPar.appendChild(document.createTextNode(picsList[key].imageText));
     imageText.appendChild(imageTextPar);
     picDiv2.appendChild(imageText);
-
-
+    picsCount++;
     //End row and do one more
     if (col == rowSize) {
       //Only do new row if there is more pics in the list
-      if (index < (picsList.length - 1)) {
+      if (picsCount < picsList.length) {
+    //  if ()
         newrow = true;
         //if (row == 2) {
 
@@ -108,8 +111,11 @@ function slideshow(rowSize) {
   var newrow = true;
   var slide = true;
 
+  var picsCount = 1;
+  var picsListLength = picsList.length;
 
-  for (let index = 0; index < picsList.length; ++index) {
+  //for (let index = 0; index < picsList.length; ++index) {
+  for (var key in picsList) {
     var rowDiv;
     var slideDiv;
 
@@ -150,26 +156,27 @@ function slideshow(rowSize) {
       var picDiv3 = document.createElement("div");
       picDiv3.className += "w3-display-topleft w3-padding"; //w3-black
       picDiv3.setAttribute("style", "color:#fff!important;background-color:rgba(0,0,0,0.5)!important");
-      picDiv3.appendChild(document.createTextNode(picsList[index][0]));
+      picDiv3.appendChild(document.createTextNode(picsList[key].name));
       picDiv2.appendChild(picDiv3);
 
       var anchor = document.createElement('a');
-      anchor.setAttribute('href', picsList[index][1]);
+      anchor.setAttribute('href', picsList[key].pagesLoc);
       picDiv2.appendChild(anchor);
 
       //Image
       var image = document.createElement("img");
-      image.className += picsList[index][2];
-      image.setAttribute("src", picsList[index][3]);
-      image.setAttribute("alt", picsList[index][4]);
-      image.setAttribute("style", picsList[index][5]);
+      image.className += picsList[key].className;
+      image.setAttribute("src", picsList[key].imageLoc);
+      image.setAttribute("alt", picsList[key].altName);
+      image.setAttribute("style", picsList[key].imageWidth);
 
       anchor.appendChild(image);
+      picsCount++;
 
       //End row and do one more
       if (col == rowSize) {
         //Only do new row if there is more pics in the list
-        if (index < (picsList.length - 1)) {
+        if (picsCount <= picsListLength) {
           newrow = true;
           //if (row == 2) {
           if (row == 1) {

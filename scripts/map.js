@@ -2,7 +2,7 @@
 * This JS will create a map with markers
 * It will also create and manage the info window for the markers
 ************************************/
-
+/*
 //----------------------Content text for the info windows-------------------------
 //----------------------------------Start-----------------------------------------
 
@@ -74,7 +74,7 @@ var harjedalens_fjallmuseum_contentString =
 				'<p><a href="https://www.google.com/maps/search/?api=1&query=57.099466,12.248345">Hitta hit</a></p></div>'+
 			'</div>'+
 		'</div>';
-
+*/
 //----------------------Content text for the info windows-------------------------
 //-----------------------------------End------------------------------------------
 
@@ -82,7 +82,7 @@ var harjedalens_fjallmuseum_contentString =
 // Add new locations here:
 // {lat: <latitude>, lng: <longitude>, title: <title of the marker>, info: <contentString>, pinColor: color of the pin}
 
-var locations = [
+/*var locations = [
 	{lat: 58.412363, lng: 15.616854, title: "Staty i Linköping", info: statue_001_contentString, pinColor: null},
 	{lat: 59.395572, lng: 18.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null},
 	{lat: 62.548326, lng: 12.537803, title: "Härjedalens Fjällmuseum", info: harjedalens_fjallmuseum_contentString,  pinColor: "007569"},
@@ -92,8 +92,15 @@ var locations = [
 	//{lat: 59.494572, lng: 18.237009, title: "2", info: null, pinColor: null},
 	//{lat: 59.294572, lng: 18.337009, title: "3", info: null, pinColor: null},
 	//{lat: 59.694572, lng: 18.437009, title: "4", info: null, pinColor: null}
-];
+];*/
 
+var locations = picsList;
+
+/*for (let index = 0; index < picsList.length; ++index) {
+	locations.push(picsList[index][7]);
+}
+console.log(locations);
+*/
 
 //Global vars
 var infowindow;
@@ -144,7 +151,6 @@ function setMarkers(map,locations){
 				title: location.title
 			});
 		}
-
 
 		if (location.info!=null) {
 			google.maps.event.addListener(marker, 'click', function(evt) {
