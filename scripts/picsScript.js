@@ -1,3 +1,4 @@
+/*
 var picsList = [["Skulptur 1", "pages/blank.html", "statues", "pics/512px-skulptur_001_mod.png","", "width:100%","Bildtext"],
 ["Maj", "pages/maj.html", "statues" ,"pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", "Maj", "width:100%","Denna staty av Maj kan hittas i Danderyd, Stockholm"],
 ["Skulptur 1", "pages/blank.html", "statues", "pics/512px-skulptur_001_mod.png","", "width:100%","Bildtext"],
@@ -10,7 +11,7 @@ var picsList = [["Skulptur 1", "pages/blank.html", "statues", "pics/512px-skulpt
 ["Per Albin Hansson", "pages/per_albin_hansson.html", "statues", "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", "Per Albin Hansson", "width:100%","Bildtext"],
 ["Maj", "pages/maj.html", "statues" ,"pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", "Maj", "width:100%","Denna staty av Maj kan hittas i Danderyd, Stockholm"],
 ["Per Albin Hansson", "pages/per_albin_hansson.html", "statues", "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", "Per Albin Hansson", "width:100%","Bildtext"]];
-
+*/
 
 /************************
  * Gallerys
@@ -57,13 +58,13 @@ function picsGallery(rowSize) {
     picDiv2.appendChild(picDiv3);
 
     var anchor = document.createElement('a');
-    anchor.setAttribute('href', picsList[index][1]);
+    anchor.setAttribute('href', "../" + picsList[index][1]);
     picDiv2.appendChild(anchor);
 
     //Image
     var image = document.createElement("img");
     image.className += picsList[index][2];
-    image.setAttribute("src", picsList[index][3]);
+    image.setAttribute("src", "../" + picsList[index][3]);
     image.setAttribute("alt", picsList[index][4]);
     image.setAttribute("style", picsList[index][5]);
 
