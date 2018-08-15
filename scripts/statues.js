@@ -92,7 +92,7 @@ pinColor: color for the marker pin on the map (set null if red, eg. 007569 for g
 var picsList = [
   {name: "Skulptur 1", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/512px-skulptur_001_mod.png", altName: "", imageWidth: "width:100%",
   imageText: "Bildtext",
-  lat: 58.412363, lng: 15.616854, title: "Staty i Linköping", info: statue_001_contentString, pinColor: null},
+  lat: 57.412363, lng: 15.616854, title: "Staty i Linköping", info: statue_001_contentString, pinColor: null},
 
   {name: "Skulptur 1", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/512px-skulptur_001_mod.png", altName: "", imageWidth: "width:100%",
   imageText: "Bildtext",
@@ -104,15 +104,15 @@ var picsList = [
 
   {name: "Per Albin Hansson", pagesLoc: "pages/per_albin_hansson.html", className: "statues", imageLoc: "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", altName: "Per Albin Hansson", imageWidth: "width:100%",
   imageText: "Bildtext",
-  lat: 59.372830, lng: 16.482146, title: "Per Albin Hansson", info: per_albin_hansson_contentString, pinColor: null},
+  lat: 58.372830, lng: 16.482146, title: "Per Albin Hansson", info: per_albin_hansson_contentString, pinColor: null},
 
   {name: "Maj", pagesLoc: "pages/maj.html", className: "statues" ,imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageWidth: "width:100%",
   imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",
-  lat: 59.395572, lng: 18.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null},
+  lat: 59.395572, lng: 19.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null},
 
   {name: "Skulptur 1", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/512px-skulptur_001_mod.png", altName: "", imageWidth: "width:100%",
   imageText: "Bildtext",
-  lat: 58.412363, lng: 15.616854, title: "Staty i Linköping", info: statue_001_contentString, pinColor: null},
+  lat: 58.912363, lng: 15.616854, title: "Staty i Linköping", info: statue_001_contentString, pinColor: null},
 
   {name: "Maj", pagesLoc: "pages/maj.html", className: "statues" ,imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageWidth: "width:100%",
   imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",
@@ -128,7 +128,7 @@ var picsList = [
 
   {name: "Maj", pagesLoc: "pages/maj.html", className: "statues", imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageWidth: "width:100%",
   imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",
-  lat: 59.395572, lng: 28.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null},
+  lat: 49.395572, lng: 15.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null},
 
   {name: "Per Albin Hansson", pagesLoc: "pages/per_albin_hansson.html", className: "statues", imageLoc: "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", altName: "Per Albin Hansson", imageWidth: "width:100%",
   imageText: "Bildtext",
@@ -136,6 +136,6 @@ var picsList = [
 
   {name: "Maj", pagesLoc: "pages/maj.html", className: "statues", imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageWidth: "width:100%",
   imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",
-  lat: 58.395572, lng: 15.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null}
+  lat: 59.395572, lng: 18.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null}
 
 ];
