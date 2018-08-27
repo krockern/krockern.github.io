@@ -40,6 +40,23 @@ var maj_danderyd_contentString =
 	'</div>';
 
 //----------------------
+// Maj, Söderhamn, Strykjärnsparken
+//----------------------
+var maj_strykjarnsparken_contentString =
+	'<div id="content">'+
+		'<div id="siteNotice">'+
+		'</div>'+
+		'<h4 id="firstHeading" class="firstHeading">Maj</h4>'+
+		'<div id="bodyContent">'+
+			'<div class="infoviewImage" style="float:left; width:160px;"><a href="pages/maj.html"><img src="pics/maj-soderhamn/256px-Maj_Strykjarnsparken.jpg" alt="Maj" style="width:150px; align:center;"></a></div>' +
+			'<div style="paddingLeft:5px"><p>Denna staty av <b>Maj</b> finns i Strykjärnsparken i Söderhamn</p>'+
+			'<p>Maj finns även i Danderyd, Stockholm och Skolparken, Vilhelmina</p>' +
+			'<p>Klicka <a href="pages/maj.html">här</a> för mer information</p>' +
+			'<p><a href="https://www.google.com/maps/search/?api=1&query=61.301874,17.054075">Hitta hit</a></p></div>'+
+		'</div>'+
+	'</div>';
+
+//----------------------
 // Härjedalens Fjällmuseum
 //----------------------
 var harjedalens_fjallmuseum_contentString =
@@ -136,6 +153,10 @@ var picsList = [
 
   {name: "Maj", pagesLoc: "pages/maj.html", className: "statues", imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageWidth: "width:100%",
   imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",
-  lat: 59.395572, lng: 18.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null}
+  lat: 59.395572, lng: 18.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null},
+
+	{name: "Maj", pagesLoc: "pages/maj.html", className: "statues", imageLoc: "pics/maj-soderhamn/512px-Maj_Strykjarnsparken.jpg", altName: "Maj", imageWidth: "width:100%",
+  imageText: "Denna staty av Maj kan hittas i Strykjärnsparken, Söderhamn",
+  lat: 61.301874, lng: 17.054075, title: "Maj i Strykjärnsparken", info: maj_strykjarnsparken_contentString, pinColor: null}
 
 ];
