@@ -50,7 +50,7 @@ function picsGallery(rowSize) {
     rowDiv.appendChild(picDiv1);
 
     var picDiv2 = document.createElement("div");
-    picDiv2.className += "w3-display-container";
+    picDiv2.className += "w3-display-container w3-hover-light-grey";
     picDiv1.appendChild(picDiv2);
 
     var picDiv3 = document.createElement("div");
@@ -75,6 +75,7 @@ function picsGallery(rowSize) {
 
     //Image text
     var imageText = document.createElement("div");
+    imageText.className += "w3-container";
     var imageTextPar = document.createElement("p");
     imageTextPar.appendChild(document.createTextNode(picsList[key].imageText));
     imageText.appendChild(imageTextPar);
