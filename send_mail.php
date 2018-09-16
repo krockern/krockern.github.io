@@ -1,6 +1,6 @@
 <?php
 echo phpversion();
-if(isset($_POST['email'])) {
+//if(isset($_POST['email'])) {
 
 
 
@@ -40,16 +40,15 @@ if(isset($_POST['email'])) {
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
-  //if(!preg_match($email_exp,$email_from)) {
-  if (!filter_var($email_from, FILTER_VALIDATE_EMAIL)) {
+  if(!preg_match($email_exp,$email_from)) {
     $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
   }
 
     $string_exp = "/^[A-Za-z .'-]+$/";
 
-  //if(!preg_match($string_exp,$name)) {
-    //$error_message .= 'The First Name you entered does not appear to be valid.<br />';
-  //}
+  if(!preg_match($string_exp,$name)) {
+    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+  }
 
 
   if(strlen($comment) < 2) {
@@ -77,7 +76,7 @@ if(isset($_POST['email'])) {
 
 // create email headers
 $headers = 'From: '.$email_from."\r\n". 'Reply-To: '.$email_from."\r\n" . 'X-Mailer: PHP/' . phpversion();
-
+echo $headers;
 mail($email_to, $email_subject, $email_message);
 ?>
 
@@ -87,5 +86,5 @@ Thank you for contacting us. We will be in touch with you very soon.
 
 <?php
 
-}
+//}
 ?>
