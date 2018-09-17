@@ -129,12 +129,12 @@
   <div class="w3-container w3-padding-32" id="contact">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Kontakt</h3>
     <p>Om du vill komma i kontakt med Näsvallsstiftelsen, vänligen fyll i kontaktformulöret nedan.</p>
-    <form action="http://test.supernus.se/php/send_mail.php" method="post" target="_blank">
+    <form action="http://dodwiki.se/nasvall/php/send_mail.php" method="post" target="_self">
       <input class="w3-input w3-border" type="text" placeholder="Namn" required name="name">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="E-postadress" required name="email">
+      <input class="w3-input w3-section w3-border" type="email" placeholder="E-postadress" required name="email">
       <input class="w3-input w3-section w3-border" type="text" placeholder="Ämne" required name="subject">
       <!--<input class="w3-input w3-section w3-border" type="text" placeholder="Meddelande" required name="comment">-->
-			<textarea class="w3-input w3-section w3-border" name="comment" rows="5" placeholder="Meddelande"></textarea>
+			<textarea class="w3-input w3-section w3-border" name="comment" rows="5" required placeholder="Meddelande"></textarea>
       <button class="w3-button w3-black w3-section" type="submit">
         <i class="fa fa-paper-plane"></i> Skicka meddelande
       </button>
