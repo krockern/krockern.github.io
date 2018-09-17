@@ -120,7 +120,7 @@ if(isset($_POST['email'])) {
 
 		<!-- Project Section -->
 		<div class="w3-container w3-padding-32" id="projects">
-			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Tom sida</h3>
+			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Tack för ditt meddelande</h3>
 		</div>
 
 		<!-- Row with pictures -->
@@ -129,7 +129,7 @@ if(isset($_POST['email'])) {
 
 
 			<div class="w3-col l6 m6 w3-margin-bottom">
-				<p>Tack för ditt meddelande. Vänligen gå tillbaka tillbaka till föregående sida genom att klicka <a href="http://nasvall.dodwiki.se/index.html">här</a></p>
+				<p>Vänligen gå tillbaka till föregående sida genom att klicka <a href="http://nasvall.dodwiki.se/index.html">här</a></p>
 			</div>
 
 
