@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
 		<link rel="stylesheet" type="text/css" href="css/w3.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript" src="scripts/statues.js"></script>
@@ -33,46 +32,19 @@
 				<a href="#locations" class="w3-bar-item w3-button">Karta</a>
 			</div>
 
-			<div class="hamburgerContainer w3-right w3-hide-large" onclick="hamburgerIcon(this)">
+			<div class="hamburgerContainer w3-right w3-hide-large" id="hamburgerContainer" onclick="hamburgerIcon(this)">
 				<div class="hamburgerBar1"></div>
 				<div class="hamburgerBar2"></div>
 				<div class="hamburgerBar3"></div>
 			</div>
 			<div class="topnav w3-right w3-hide-large">
 				<ul class=".w3-ul.w3-hoverable">
-					<!--<a href="#about" class="w3-bar-item w3-button">Om Emil</a>
-					<a href="#projects" class="w3-bar-item w3-button">Konstverk</a>
-					<a href="#contact" class="w3-bar-item w3-button">Kontakt</a>
-					<a href="#locations" class="w3-bar-item w3-button">Karta</a>-->
-					<a href="#about" ><li>Om Emil</li></a>
-					<a href="#projects" ><li>Konstverk</li></a>
-					<a href="#contact" ><li>Kontakt</li></a>
-					<a href="#locations" ><li>Karta</li></a>
-
+					<a class="hamburgerItem" href="#about" ><li>Om Emil</li></a>
+					<a class="hamburgerItem" href="#projects" ><li>Konstverk</li></a>
+					<a class="hamburgerItem" href="#contact" ><li>Kontakt</li></a>
+					<a class="hamburgerItem" href="#locations" ><li>Karta</li></a>
 				</ul>
 			</div>
-
-
-				<script>
-					function hamburgerIcon(x) {
-					    x.classList.toggle("hamburgerChange");
-					}
-				</script>
-
-				<script>
-					function myFunction() {
-					  var x = document.getElementById("topnav");
-					  if (x.style.display === "block") {
-					    x.style.display = "none";
-					  } else {
-					    x.style.display = "block";
-					  }
-					}
-				</script>
-
-
-
-
 
 		</div>
 	</div>
