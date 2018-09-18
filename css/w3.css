@@ -104,16 +104,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 /* Small screens */
 @media (max-height:400px) {.own-top{position:static!important}}
 
-input:required:invalid, input:focus:invalid {
-    background-image: url(../images/invalid.png);
-    background-position: right top;
-    background-repeat: no-repeat;
-  }
-  input:required:valid {
-    background-image: url(../images/valid.png);
-    background-position: right top;
-    background-repeat: no-repeat;
-  }
+
 
 .w3-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
 .w3-display-topleft{position:absolute;left:0;top:0}.w3-display-topright{position:absolute;right:0;top:0}
@@ -290,3 +281,51 @@ input:required:invalid, input:focus:invalid {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
+
+
+
+/*****************
+ * Hamburger menu
+ *****************/
+
+
+
+.hamburgerContainer {
+    display: inline-block;
+    cursor: pointer;
+    position: right;
+}
+
+.hamburgerBar1, .hamburgerBar2, .hamburgerBar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.hamburgerChange .hamburgerBar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.hamburgerChange .hamburgerBar2 {opacity: 0;}
+
+.hamburgerChange .hamburgerBar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
+
+.topnav{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:right; text-align:center; font-size:12px;}
+.topnav ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.topnav li {display: block; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.topnav li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.topnav ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.topnav ul li a:hover {  color: #666; text-decoration:none;}
+.topnav a{text-decoration:none; color:#666;}
+.topnav a:hover{text-decoration:none; color:#666;}

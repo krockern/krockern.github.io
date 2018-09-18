@@ -1,7 +1,9 @@
-var main = function() {
-  $('.dropdown-toggle').click(function() {
-    $('.dropdown-menu').toggle();
-  });
-}
+$( document ).ready(function() {
 
-$(document).ready(main);
+
+  $( ".topnav" ).hide();
+  $( ".hamburgerContainer" ).click(function() {
+      $( ".topnav" ).slideToggle( "fast", function() {});
+    });
+
+});
