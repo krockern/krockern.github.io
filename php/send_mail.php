@@ -129,7 +129,26 @@ if(isset($_POST['email'])) {
 
 
 			<div class="w3-col l6 m6 w3-margin-bottom">
-				<p>Vänligen gå tillbaka till föregående sida genom att klicka <a href="http://nasvall.dodwiki.se/index.html">här</a></p>
+        <p>Du kommer automatiskt bli vidareskickad till förstasidan efter 10 sekunder eller så kan du trycka på knappen nedan.</p>
+    		<a href="http://nasvall.dodwiki.se/index.html">
+          <span class="w3-button w3-black w3-section" style="width: 95%">
+            Tillbaka (<span id="redirectSeconds">10</span>)
+          </span>
+        </a>
+
+
+        <script>
+          var seconds = 10;
+          var x = setInterval(function() {
+            seconds = seconds - 1;
+            document.getElementById("redirectSeconds").innerHTML = seconds;
+
+            if (seconds <  0) {
+              clearInterval(x);
+            }
+
+          }, 1000);
+        </script>
 			</div>
 
 
@@ -149,6 +168,7 @@ if(isset($_POST['email'])) {
 
 
 <?php
-
+  header("refresh:10;url=http://nasvall.dodwiki.se/index.html");
+  die();
 }
 ?>
