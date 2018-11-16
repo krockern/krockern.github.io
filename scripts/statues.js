@@ -97,8 +97,9 @@ pagesLoc: the statues own page,
 className: statues,
 imageLoc: image location,
 altName: alternative text if image is not loaded,
-imageWidth: width of the image
+imageStyle: width of the image
 imageText: text under the image in the gallary
+imageTextSmall: small text for copyright text (e.g. Foto: Bukowskis)
 lat: latitude coordinate for the map
 lng: longitude coordinate for the map
 title: marker title on the map
@@ -107,56 +108,90 @@ pinColor: color for the marker pin on the map (set null if red, eg. 007569 for g
 }*/
 
 var picsList = [
-  {name: "Skulptur 1", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/512px-skulptur_001_mod.png", altName: "", imageWidth: "width:100%;",
-  imageText: "Bildtext",
+  {name: "Skulptur 1", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/512px-skulptur_001_mod.png", altName: "", imageStyle: "width:100%;",
+  imageText: "Bildtext", imageTextSmall:null,
   lat: 57.412363, lng: 15.616854, title: "Staty i Linköping", info: statue_001_contentString, pinColor: null},
 
-  {name: "Skulptur 1", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/512px-skulptur_001_mod.png", altName: "", imageWidth: "width:100%;",
-  imageText: "Bildtext",
+  {name: "Skulptur 1", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/512px-skulptur_001_mod.png", altName: "", imageStyle: "width:100%;",
+  imageText: "Bildtext",imageTextSmall:null,
   lat: 58.412363, lng: 15.616854, title: "Staty i Linköping", info: statue_001_contentString, pinColor: null},
 
-  {name: "Per Albin Hansson", pagesLoc: "pages/per_albin_hansson.html", className: "statues", imageLoc: "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", altName: "Per Albin Hansson", imageWidth: "width:100%;",
-  imageText: "Bildtext Morbi eget malesuada lorem. Integer facilisis tellus eu enim feugiat maximus. Ut posuere erat vitae dolor ullamcorpereuismod. Vivamus quis neque erat. Maecenas id porta justo. Integer porta in nunc id cursus. Nulla tempor auctor auctor.Fusce ligula mauris, finibus eget sem vitae, vestibulum",
+  {name: "Per Albin Hansson", pagesLoc: "pages/per_albin_hansson.html", className: "statues", imageLoc: "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", altName: "Per Albin Hansson", imageStyle: "width:100%;",
+  imageText: "Bildtext Morbi eget malesuada lorem. Integer facilisis tellus eu enim feugiat maximus. Ut posuere erat vitae dolor ullamcorpereuismod. Vivamus quis neque erat. Maecenas id porta justo. Integer porta in nunc id cursus. Nulla tempor auctor auctor.Fusce ligula mauris, finibus eget sem vitae, vestibulum",imageTextSmall:null,
   lat: 59.372830, lng: 16.482146, title: "Per Albin Hansson", info: per_albin_hansson_contentString, pinColor: null},
 
-  {name: "Per Albin Hansson", pagesLoc: "pages/per_albin_hansson.html", className: "statues", imageLoc: "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", altName: "Per Albin Hansson", imageWidth: "width:100%;",
-  imageText: "Bildtext",
+  {name: "Per Albin Hansson", pagesLoc: "pages/per_albin_hansson.html", className: "statues", imageLoc: "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", altName: "Per Albin Hansson", imageStyle: "width:100%;",
+  imageText: "Bildtext",imageTextSmall:null,
   lat: 58.372830, lng: 16.482146, title: "Per Albin Hansson", info: per_albin_hansson_contentString, pinColor: null},
 
-  {name: "Maj", pagesLoc: "pages/maj.html", className: "statues" ,imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageWidth: "width:100%;",
-  imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",
+  {name: "Maj", pagesLoc: "pages/maj.html", className: "statues" ,imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageStyle: "width:100%;",
+  imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",imageTextSmall:null,
   lat: 59.395572, lng: 19.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null},
 
-  {name: "Skulptur 1", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/512px-skulptur_001_mod.png", altName: "", imageWidth: "width:100%;",
-  imageText: "Bildtext",
+  {name: "Skulptur 1", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/512px-skulptur_001_mod.png", altName: "", imageStyle: "width:100%;",
+  imageText: "Bildtext",imageTextSmall:null,
   lat: 58.912363, lng: 15.616854, title: "Staty i Linköping", info: statue_001_contentString, pinColor: null},
 
-  {name: "Maj", pagesLoc: "pages/maj.html", className: "statues" ,imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageWidth: "width:100%;",
-  imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",
+  {name: "Maj", pagesLoc: "pages/maj.html", className: "statues" ,imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageStyle: "width:100%;",
+  imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",imageTextSmall:null,
   lat: 59.395572, lng: 18.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null},
 
-  {name: "Skulptur 1", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/512px-skulptur_001_mod.png", altName: "", imageWidth: "width:100%;",
-  imageText: "Bildtext",
+  {name: "Skulptur 1", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/512px-skulptur_001_mod.png", altName: "", imageStyle: "width:100%;",
+  imageText: "Bildtext",imageTextSmall:null,
   lat: 58.412363, lng: 15.616854, title: "Staty i Linköping", info: statue_001_contentString, pinColor: null},
 
-  {name: "Per Albin Hansson", pagesLoc: "pages/per_albin_hansson.html", className: "statues", imageLoc: "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", altName: "Per Albin Hansson", imageWidth: "width:100%;",
-  imageText: "Bildtext",
+  {name: "Per Albin Hansson", pagesLoc: "pages/per_albin_hansson.html", className: "statues", imageLoc: "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", altName: "Per Albin Hansson", imageStyle: "width:100%;",
+  imageText: "Bildtext",imageTextSmall:null,
   lat: 59.372830, lng: 26.482146, title: "Per Albin Hansson", info: per_albin_hansson_contentString, pinColor: null},
 
-  {name: "Maj", pagesLoc: "pages/maj.html", className: "statues", imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageWidth: "width:100%;",
-  imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",
+  {name: "Maj", pagesLoc: "pages/maj.html", className: "statues", imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageStyle: "width:100%;",
+  imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",imageTextSmall:null,
   lat: 49.395572, lng: 15.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null},
 
-  {name: "Per Albin Hansson", pagesLoc: "pages/per_albin_hansson.html", className: "statues", imageLoc: "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", altName: "Per Albin Hansson", imageWidth: "width:100%;",
-  imageText: "Bildtext",
+  {name: "Per Albin Hansson", pagesLoc: "pages/per_albin_hansson.html", className: "statues", imageLoc: "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", altName: "Per Albin Hansson", imageStyle: "width:100%;",
+  imageText: "Bildtext",imageTextSmall:null,
   lat: 59.372830, lng: 17.482146, title: "Per Albin Hansson", info: per_albin_hansson_contentString, pinColor: null},
 
-  {name: "Maj", pagesLoc: "pages/maj.html", className: "statues", imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageWidth: "width:100%;",
-  imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",
+  {name: "Maj", pagesLoc: "pages/maj.html", className: "statues", imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageStyle: "width:100%;",
+  imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",imageTextSmall:null,
   lat: 59.395572, lng: 18.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null},
 
-	{name: "Maj", pagesLoc: "pages/maj.html", className: "statues", imageLoc: "pics/maj-soderhamn/512px-Maj_Strykjarnsparken_mod.jpg", altName: "Maj", imageWidth: "width:100%;",
-  imageText: "Denna staty av Maj kan hittas i Strykjärnsparken, Söderhamn",
-  lat: 61.301874, lng: 17.054075, title: "Maj i Strykjärnsparken", info: maj_strykjarnsparken_contentString, pinColor: null}
+	{name: "Maj", pagesLoc: "pages/maj.html", className: "statues", imageLoc: "pics/maj-soderhamn/512px-Maj_Strykjarnsparken_mod.jpg", altName: "Maj", imageStyle: "width:100%;",
+  imageText: "Denna staty av Maj kan hittas i Strykjärnsparken, Söderhamn",imageTextSmall:null,
+  lat: 61.301874, lng: 17.054075, title: "Maj i Strykjärnsparken", info: maj_strykjarnsparken_contentString, pinColor: null},
+
+	{name: "Maj", pagesLoc: "pages/maj.html", className: "statues", imageLoc: "pics/maj-bukowskis/9067830_bukobject_mod.jpg", altName: "Maj", imageStyle: "width:100%;",
+  imageText: "",imageTextSmall:"Foto: Bukowskis",
+  lat:null, lng:null, title:null, info:null , pinColor: null}
 
 ];
+
+
+/*{
+name: name of the statue,
+pagesLoc: the statues own page,
+className: statues,
+imageLoc: image location,
+altName: alternative text if image is not loaded,
+imageStyle: width of the image
+imageText: text under the image in the gallary
+lat: latitude coordinate for the map
+lng: longitude coordinate for the map
+title: marker title on the map
+info: a separate var for the popup info window on the map, see above
+pinColor: color for the marker pin on the map (set null if red, eg. 007569 for green)
+}*/
+
+var smallStatuesList = [
+{name: "Maj", pagesLoc: "pages/maj.html", className: "statues", imageLoc: "pics/maj-bukowskis/9067830_bukobject.jpg", altName: "Maj", imageStyle: "width:100%;",
+imageText: "Foto: Bukowskis"},
+
+{name: "", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/unnamed/9089574_bukobject.jpg", altName: "", imageStyle: "width:100%;",
+imageText: "Foto: Bukowskis"},
+
+{name: "", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/unnamed/10178877_bukobject.jpg", altName: "", imageStyle: "width:100%;",
+imageText: "Foto: Bukowskis"},
+
+{name: "Trappan", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/trappan/10377249_bukobject.jpg", altName: "Trappan", imageStyle: "width:100%;",
+imageText: "Foto: Bukowskis"}
+]

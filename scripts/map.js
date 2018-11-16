@@ -94,7 +94,13 @@ var harjedalens_fjallmuseum_contentString =
 	//{lat: 59.694572, lng: 18.437009, title: "4", info: null, pinColor: null}
 ];*/
 
-var locations = picsList;
+//var locations = picsList;
+var locations = [];
+for (var key in picsList) {
+	if (picsList[key].lat != null) {
+		locations.push(picsList[key]);
+	}
+}
 
 /*for (let index = 0; index < picsList.length; ++index) {
 	locations.push(picsList[index][7]);

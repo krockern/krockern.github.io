@@ -60,6 +60,14 @@ function picsGallery(rowSize) {
     picDiv3.appendChild(document.createTextNode(picsList[key].name));
     picDiv2.appendChild(picDiv3);
 
+    if (picsList[key].imageTextSmall != null) {
+      var picDiv4 = document.createElement("div");
+      picDiv4.className += "w3-display-bottomright w3-padding"; //w3-black
+      picDiv4.setAttribute("style", "color:#fff!important;background-color:rgba(0,0,0,0.5)!important");
+      picDiv4.appendChild(document.createTextNode(picsList[key].imageTextSmall));
+      picDiv2.appendChild(picDiv4);
+    }
+
     var anchor = document.createElement('a');
     anchor.setAttribute('href', "../" + picsList[key].pagesLoc);
     picDiv2.appendChild(anchor);
@@ -69,7 +77,7 @@ function picsGallery(rowSize) {
     image.className += picsList[key].className;
     image.setAttribute("src", "../" + picsList[key].imageLoc);
     image.setAttribute("alt", picsList[key].altName);
-    image.setAttribute("style", picsList[key].imageWidth);
+    image.setAttribute("style", picsList[key].imageStyle);
 
     anchor.appendChild(image);
 
@@ -152,6 +160,7 @@ function slideshow(rowSize) {
 
       var picDiv2 = document.createElement("div");
       picDiv2.className += "w3-display-container";
+      picDiv2.setAttribute("style", "max-height:auto;");
       picDiv1.appendChild(picDiv2);
 
       var picDiv3 = document.createElement("div");
@@ -159,6 +168,14 @@ function slideshow(rowSize) {
       picDiv3.setAttribute("style", "color:#fff!important;background-color:rgba(0,0,0,0.5)!important");
       picDiv3.appendChild(document.createTextNode(picsList[key].name));
       picDiv2.appendChild(picDiv3);
+
+      if (picsList[key].imageTextSmall != null) {
+        var picDiv4 = document.createElement("div");
+        picDiv4.className += "w3-display-bottomright w3-padding"; //w3-black
+        picDiv4.setAttribute("style", "color:#fff!important;background-color:rgba(0,0,0,0.5)!important");
+        picDiv4.appendChild(document.createTextNode(picsList[key].imageTextSmall));
+        picDiv2.appendChild(picDiv4);
+      }
 
       var anchor = document.createElement('a');
       anchor.setAttribute('href', picsList[key].pagesLoc);
@@ -169,7 +186,7 @@ function slideshow(rowSize) {
       image.className += picsList[key].className;
       image.setAttribute("src", picsList[key].imageLoc);
       image.setAttribute("alt", picsList[key].altName);
-      image.setAttribute("style", picsList[key].imageWidth);
+      image.setAttribute("style", picsList[key].imageStyle);
 
       anchor.appendChild(image);
       picsCount++;
