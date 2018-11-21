@@ -162,6 +162,18 @@ var picsList = [
 
 	{name: "Maj", pagesLoc: "pages/maj.html", className: "statues", imageLoc: "pics/maj-bukowskis/9067830_bukobject_mod.jpg", altName: "Maj", imageStyle: "width:100%;",
   imageText: "",imageTextSmall:"Foto: Bukowskis",
+  lat:null, lng:null, title:null, info:null , pinColor: null},
+
+	{name: "Trappan", pagesLoc: null, className: "statues", imageLoc: "pics/trappan/10377249_bukobject_mod.jpg", altName: "Trappan", imageStyle: "width:100%;",
+  imageText: "",imageTextSmall:"Foto: Bukowskis",
+  lat:null, lng:null, title:null, info:null , pinColor: null},
+
+	{name: null, pagesLoc: null, className: "statues", imageLoc: "pics/unnamed/9089574_bukobject_mod2.jpg", altName: "", imageStyle: "width:100%;",
+  imageText: "",imageTextSmall:"Foto: Bukowskis",
+  lat:null, lng:null, title:null, info:null , pinColor: null},
+
+	{name: null, pagesLoc: null, className: "statues", imageLoc: "pics/unnamed/10178877_bukobject_mod2.jpg", altName: "", imageStyle: "width:100%;",
+  imageText: "",imageTextSmall:"Foto: Bukowskis",
   lat:null, lng:null, title:null, info:null , pinColor: null}
 
 ];

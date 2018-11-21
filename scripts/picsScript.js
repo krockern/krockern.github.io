@@ -53,12 +53,14 @@ function picsGallery(rowSize) {
     picDiv2.className += "w3-display-container w3-hover-light-grey";
     picDiv1.appendChild(picDiv2);
 
-    var picDiv3 = document.createElement("div");
-    picDiv3.className += "w3-display-topleft w3-padding"; //w3-black
-    picDiv3.setAttribute("style", "color:#fff!important;background-color:rgba(0,0,0,0.5)!important");
-    //picDiv3.appendChild(document.createTextNode(picsList[index][0]));
-    picDiv3.appendChild(document.createTextNode(picsList[key].name));
-    picDiv2.appendChild(picDiv3);
+    if (picsList[key].name != null) {
+      var picDiv3 = document.createElement("div");
+      picDiv3.className += "w3-display-topleft w3-padding"; //w3-black
+      picDiv3.setAttribute("style", "color:#fff!important;background-color:rgba(0,0,0,0.5)!important");
+      //picDiv3.appendChild(document.createTextNode(picsList[index][0]));
+      picDiv3.appendChild(document.createTextNode(picsList[key].name));
+      picDiv2.appendChild(picDiv3);
+    }
 
     if (picsList[key].imageTextSmall != null) {
       var picDiv4 = document.createElement("div");
@@ -69,7 +71,9 @@ function picsGallery(rowSize) {
     }
 
     var anchor = document.createElement('a');
-    anchor.setAttribute('href', "../" + picsList[key].pagesLoc);
+    if (picsList[key].pagesLoc != null) {
+      anchor.setAttribute('href', "../" + picsList[key].pagesLoc);
+    }
     picDiv2.appendChild(anchor);
 
     //Image
@@ -163,11 +167,13 @@ function slideshow(rowSize) {
       picDiv2.setAttribute("style", "max-height:auto;");
       picDiv1.appendChild(picDiv2);
 
-      var picDiv3 = document.createElement("div");
-      picDiv3.className += "w3-display-topleft w3-padding"; //w3-black
-      picDiv3.setAttribute("style", "color:#fff!important;background-color:rgba(0,0,0,0.5)!important");
-      picDiv3.appendChild(document.createTextNode(picsList[key].name));
-      picDiv2.appendChild(picDiv3);
+      if (picsList[key].name != null) {
+        var picDiv3 = document.createElement("div");
+        picDiv3.className += "w3-display-topleft w3-padding"; //w3-black
+        picDiv3.setAttribute("style", "color:#fff!important;background-color:rgba(0,0,0,0.5)!important");
+        picDiv3.appendChild(document.createTextNode(picsList[key].name));
+        picDiv2.appendChild(picDiv3);
+      }
 
       if (picsList[key].imageTextSmall != null) {
         var picDiv4 = document.createElement("div");
@@ -177,9 +183,13 @@ function slideshow(rowSize) {
         picDiv2.appendChild(picDiv4);
       }
 
+
       var anchor = document.createElement('a');
-      anchor.setAttribute('href', picsList[key].pagesLoc);
+      if (picsList[key].pagesLoc != null) {
+        anchor.setAttribute('href', picsList[key].pagesLoc);
+      }
       picDiv2.appendChild(anchor);
+
 
       //Image
       var image = document.createElement("img");
