@@ -14,9 +14,9 @@ var per_albin_hansson_contentString =
 		'<div id="siteNotice">'+
 		'</div>'+
 		'<h4 id="firstHeading" class="firstHeading">Per Albin Hansson</h4>'+
-		'<div id="bodyContent">'+
+		'<div id="bodyContent" style="overflow:hidden;">'+
 			'<div class="infoviewImage" style="float:left; width:160px;"><a href="pages/per_albin_hansson.html"><img src="pics/per_albin_hansson/256px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG" alt="Per Albin Hansson" style="width:150px; align:center;"></a></div>' +
-			'<div style="paddingLeft:5px"><p>Byst av <b>Per Albin Hansson</b> i Parken Zoo i Eskilstuna</p>'+
+			'<div style="overflow:hidden;"><p>Byst av <b>Per Albin Hansson</b> i Parken Zoo i Eskilstuna</p>'+
 			'<p>Klicka <a href="pages/per_albin_hansson.html">här</a> för mer information</p>' +
 			'<p><a href="https://www.google.com/maps/search/?api=1&query=59.372830,16.482146">Hitta hit</a></p></div>'+
 		'</div>'+
@@ -30,9 +30,9 @@ var maj_danderyd_contentString =
 		'<div id="siteNotice">'+
 		'</div>'+
 		'<h4 id="firstHeading" class="firstHeading">Maj</h4>'+
-		'<div id="bodyContent">'+
-			'<div class="infoviewImage" style="float:left; width:160px;"><a href="pages/maj.html"><img src="pics/maj-danderyd/256px-Emil_Näsvall_Maj.JPG" alt="Maj" style="width:150px; align:center;"></a></div>' +
-			'<div style="paddingLeft:5px"><p>Statyn <b>Maj</b> i Danderyd är en bronsstaty, ca. två meter hög på en marmorsockel.</p>'+
+		'<div id="bodyContent" style="overflow:hidden;">'+
+			'<div class="infoviewImage" style="float:left; width:160px; overflow:hidden;"><a href="pages/maj.html"><img src="pics/maj-danderyd/256px-Emil_Näsvall_Maj.JPG" alt="Maj" style="width:150px; align:center;"></a></div>' +
+			'<div style="overflow:hidden;"><p>Statyn <b>Maj</b> i Danderyd är en bronsstaty, ca. två meter hög på en marmorsockel.</p>'+
 			'<p>Maj finns även i Strykjärnsparken, Söderhamn och Skolparken, Vilhelmina</p>' +
 			'<p>Klicka <a href="pages/maj.html">här</a> för mer information</p>' +
 			'<p><a href="https://www.google.com/maps/search/?api=1&query=59.395572,18.037009">Hitta hit</a></p></div>'+
@@ -47,9 +47,9 @@ var maj_strykjarnsparken_contentString =
 		'<div id="siteNotice">'+
 		'</div>'+
 		'<h4 id="firstHeading" class="firstHeading">Maj</h4>'+
-		'<div id="bodyContent">'+
+		'<div id="bodyContent" style="overflow:hidden;">'+
 			'<div class="infoviewImage" style="float:left; width:160px;"><a href="pages/maj.html"><img src="pics/maj-soderhamn/256px-Maj_Strykjarnsparken.jpg" alt="Maj" style="width:150px; align:center;"></a></div>' +
-			'<div style="paddingLeft:5px"><p>Denna staty av <b>Maj</b> finns i Strykjärnsparken i Söderhamn</p>'+
+			'<div style="overflow:hidden;"><p>Denna staty av <b>Maj</b> finns i Strykjärnsparken i Söderhamn</p>'+
 			'<p>Maj finns även i Danderyd, Stockholm och Skolparken, Vilhelmina</p>' +
 			'<p>Klicka <a href="pages/maj.html">här</a> för mer information</p>' +
 			'<p><a href="https://www.google.com/maps/search/?api=1&query=61.301874,17.054075">Hitta hit</a></p></div>'+
@@ -63,7 +63,7 @@ var harjedalens_fjallmuseum_contentString =
 	'<div id="content">'+
 		'<div id="siteNotice"></div>'+
 		'<h4 id="firstHeading" class="firstHeading">Härjedalens Fjällmuseum</h4>'+
-		'<div id="bodyContent">'+
+		'<div id="bodyContent" style="overflow:hidden;">'+
 			'<p><b>Härjedalens Fjällmuseum</b> har en permanent utställning av ' +
 			'en del av <b>Emil Näsvalls</b> verk.</p>'+
 			'<p>Fjällmuseets hemsida hittar du <a href="http://kommun.herjedalen.se/fjallmuseet.4.7a231afd12424b40e2880001097.html">här</a></p>'+
@@ -79,13 +79,31 @@ var i_sommarhagen_contentString =
 	 '<div id="siteNotice">'+
 			'</div>'+
 			'<h4 id="firstHeading" class="firstHeading">I sommarhagen</h4>'+
-			'<div id="bodyContent">'+
+			'<div id="bodyContent" style="overflow:hidden;">'+
 				'<div class="infoviewImage" style="float:left; width:160px;"><a href="pages/i_sommarhagen.html"><img src="pics/i_sommarhagen/256px-I_sommarhagen.jpg" alt="Maj" style="width:150px; align:center;"></a></div>' +
-				'<div style="paddingLeft:5px"><p>Statyn <b>I sommarhagen</b> står mellan två hus i Varberg</p>'+
+				'<div style="overflow:hidden;"><p>Statyn <b>I sommarhagen</b> står mellan två hus i Varberg</p>'+
 				'<p>Klicka <a href="pages/i_sommarhagen.html">här</a> för mer information</p>' +
 				'<p><a href="https://www.google.com/maps/search/?api=1&query=57.099466,12.248345">Hitta hit</a></p></div>'+
 			'</div>'+
 		'</div>';
+
+	//----------------------
+	// Jan Fridegård, Gripsholm
+	//----------------------
+	var jan_fridegard_gripsholm_contentString =
+		'<div id="content">'+
+		 '<div id="siteNotice">'+
+				'</div>'+
+				'<h4 id="firstHeading" class="firstHeading">Jan Fridegård</h4>'+
+				'<div id="bodyContent" style="overflow:hidden;">'+
+					'<div class="infoviewImage" style="float:left; width:160px;"><a href="pages/jan_fridegard.html"><img src="pics/jan_fridegard/Jan_Fridegard_foto_Nationalmuseum_map.png" alt="Jan Fridegård" style="height:200px; align:center"></a></div>' +
+					'<div style="overflow:hidden;"><p>Statyn på <b>Jan Fridegård</b> finns i Gripsholm</p>'+
+					'<p>Klicka <a href="pages/jan_fridegard.html">här</a> för mer information</p>' +
+					'<p><a href="https://www.google.com/maps/search/?api=1&query=59.256169,17.219195">Hitta hit</a></p></div>'+
+					'<p>Foto: Nationalmuseum</p>'
+				'</div>'+
+			'</div>';
+
 
 //----------------------Content text for the info windows-------------------------
 //-----------------------------------End------------------------------------------
@@ -108,9 +126,13 @@ pinColor: color for the marker pin on the map (set null if red, eg. 007569 for g
 }*/
 
 var picsList = [
-  {name: "Skulptur 1", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/512px-skulptur_001_mod.png", altName: "", imageStyle: "width:100%;",
-  imageText: "Bildtext", imageTextSmall:null,
-  lat: 57.412363, lng: 15.616854, title: "Staty i Linköping", info: statue_001_contentString, pinColor: null},
+  {name: "Jan Fridegård", pagesLoc: "pages/jan_fridegard.html", className: "statues", imageLoc: "pics/jan_fridegard/Jan_Fridegard_foto_Nationalmuseum_slide.png", altName: "Jan Fridegård", imageStyle: "width:100%;",
+  imageText: "Jan Fridegård, Gripsholm", imageTextSmall:"Foto: Nationalmuseum",
+  lat: 59.256169, lng: 17.219195, title: "Jan Fridegård", info: jan_fridegard_gripsholm_contentString, pinColor: null},
+
+	{name: "Nils Ferlin", pagesLoc: "pages/nils_ferlin.html", className: "statues", imageLoc: "pics/nils_ferlin/nils_ferlin_slide.png", altName: "Nils Ferlin", imageStyle: "width:100%;",
+  imageText: "Nils Ferlin" ,imageTextSmall:"Bildkälla: Stockholms Auktionsverk",
+  lat:null, lng:null, title:null, info:null , pinColor: null},
 
   {name: "Skulptur 1", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/512px-skulptur_001_mod.png", altName: "", imageStyle: "width:100%;",
   imageText: "Bildtext",imageTextSmall:null,
