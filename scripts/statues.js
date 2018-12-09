@@ -130,7 +130,7 @@ var picsList = [
   imageText: "Jan Fridegård, Gripsholm", imageTextSmall:"Foto: Nationalmuseum",
   lat: 59.256169, lng: 17.219195, title: "Jan Fridegård", info: jan_fridegard_gripsholm_contentString, pinColor: null},
 
-	{name: "Nils Ferlin", pagesLoc: "pages/nils_ferlin.html", className: "statues", imageLoc: "pics/nils_ferlin/nils_ferlin_slide.png", altName: "Nils Ferlin", imageStyle: "width:100%;",
+	{name: "Nils Ferlin", pagesLoc: "pages/nils_ferlin.html", className: "statues", imageLoc: "pics/nils_ferlin/Nils_Ferlin_slide.png", altName: "Nils Ferlin", imageStyle: "width:100%;",
   imageText: "Nils Ferlin" ,imageTextSmall:"Bildkälla: Stockholms Auktionsverk",
   lat:null, lng:null, title:null, info:null , pinColor: null},
 
