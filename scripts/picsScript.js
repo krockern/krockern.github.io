@@ -46,11 +46,11 @@ function picsGallery(rowSize) {
 
 
     var picDiv1 = document.createElement("div");
-    picDiv1.className += "w3-col l3 m4 w3-margin-bottom";
+    picDiv1.className += "w3-col l3 m4 w3-margin-bottom w3-hover-light-grey";
     rowDiv.appendChild(picDiv1);
 
     var picDiv2 = document.createElement("div");
-    picDiv2.className += "w3-display-container w3-hover-light-grey";
+    picDiv2.className += "w3-display-container";
     picDiv1.appendChild(picDiv2);
 
     if (picsList[key].name != null) {
@@ -91,7 +91,7 @@ function picsGallery(rowSize) {
     var imageTextPar = document.createElement("p");
     imageTextPar.appendChild(document.createTextNode(picsList[key].imageText));
     imageText.appendChild(imageTextPar);
-    picDiv2.appendChild(imageText);
+    picDiv1.appendChild(imageText);
     picsCount++;
     //End row and do one more
     if (col == rowSize) {

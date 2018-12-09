@@ -104,6 +104,22 @@ var i_sommarhagen_contentString =
 				'</div>'+
 			'</div>';
 
+	//----------------------
+	// Jan Fridegård, Gripsholm
+	//----------------------
+	var erik_asklund_contentString =
+		'<div id="content">'+
+		 '<div id="siteNotice">'+
+				'</div>'+
+				'<h4 id="firstHeading" class="firstHeading">Erik Asklund</h4>'+
+				'<div id="bodyContent" style="overflow:hidden;">'+
+					'<div class="infoviewImage" style="float:left; width:160px;"><a href="pages/erik_asklund.html"><img src="pics/erik_asklund/Erik_Asklund_map.png" alt="Erik Asklund" style="height:200px; align:center"></a></div>' +
+					'<div style="overflow:hidden;"><p>Statyn på <b>Erik Asklund</b> finns på Nationalmuseumet</p>'+
+					'<p>Klicka <a href="pages/erik_asklund.html">här</a> för mer information</p>' +
+					'<p><a href="https://www.google.com/maps/search/?api=1&query=59.328637,18.078264">Hitta hit</a></p></div>'+
+					'<p>Foto: Nationalmuseum</p>'
+				'</div>'+
+			'</div>';
 
 //----------------------Content text for the info windows-------------------------
 //-----------------------------------End------------------------------------------
@@ -127,16 +143,20 @@ pinColor: color for the marker pin on the map (set null if red, eg. 007569 for g
 
 var picsList = [
   {name: "Jan Fridegård", pagesLoc: "pages/jan_fridegard.html", className: "statues", imageLoc: "pics/jan_fridegard/Jan_Fridegard_foto_Nationalmuseum_slide.png", altName: "Jan Fridegård", imageStyle: "width:100%;",
-  imageText: "Jan Fridegård, Gripsholm", imageTextSmall:"Foto: Nationalmuseum",
+  imageText: "Porträttbyst 1934 i förgylld gips, höjd 38 cm.", imageTextSmall:"Foto: Nationalmuseum",
   lat: 59.256169, lng: 17.219195, title: "Jan Fridegård", info: jan_fridegard_gripsholm_contentString, pinColor: null},
 
 	{name: "Nils Ferlin", pagesLoc: "pages/nils_ferlin.html", className: "statues", imageLoc: "pics/nils_ferlin/Nils_Ferlin_slide.png", altName: "Nils Ferlin", imageStyle: "width:100%;",
-  imageText: "Nils Ferlin" ,imageTextSmall:"Bildkälla: Stockholms Auktionsverk",
+  imageText: "Porträttbyst 1934 i förgylld gips, höjd 50 cm.", imageTextSmall:"Bildkälla: Stockholms Auktionsverk",
   lat:null, lng:null, title:null, info:null , pinColor: null},
 
-  {name: "Skulptur 1", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/512px-skulptur_001_mod.png", altName: "", imageStyle: "width:100%;",
-  imageText: "Bildtext",imageTextSmall:null,
-  lat: 58.412363, lng: 15.616854, title: "Staty i Linköping", info: statue_001_contentString, pinColor: null},
+	{name: "Ivar Lo-Johansson", pagesLoc: "pages/ivar_lo-johansson.html", className: "statues", imageLoc: "pics/ivar_lo-johansson/Ivar_Lo-Johansson_slide.png", altName: "Ivar Lo-Johansson", imageStyle: "width:100%;",
+  imageText: "Porträttbyst 1934 i patinerad gips, höjd 50 cm.", imageTextSmall:"Foto: Bonniers porträttsamling Nedre Manilla",
+  lat:null, lng:null, title:null, info:null , pinColor: null},
+
+  {name: "Erik Asklund", pagesLoc: "pages/erik_asklund.html", className: "statues", imageLoc: "pics/erik_asklund/Erik_Asklund_slide.png", altName: "Erik Asklund", imageStyle: "width:100%;",
+  imageText: "Porträttbyst 1946 i gips, höjd 54 cm.", imageTextSmall:"Foto: Nationalmuseum",
+  lat: 59.328637, lng: 18.078264, title: "Erik Asklund", info: erik_asklund_contentString, pinColor: null},
 
   {name: "Per Albin Hansson", pagesLoc: "pages/per_albin_hansson.html", className: "statues", imageLoc: "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", altName: "Per Albin Hansson", imageStyle: "width:100%;",
   imageText: "Bildtext Morbi eget malesuada lorem. Integer facilisis tellus eu enim feugiat maximus. Ut posuere erat vitae dolor ullamcorpereuismod. Vivamus quis neque erat. Maecenas id porta justo. Integer porta in nunc id cursus. Nulla tempor auctor auctor.Fusce ligula mauris, finibus eget sem vitae, vestibulum",imageTextSmall:null,
