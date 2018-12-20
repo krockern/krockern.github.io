@@ -87,39 +87,56 @@ var i_sommarhagen_contentString =
 			'</div>'+
 		'</div>';
 
-	//----------------------
-	// Jan Fridegård, Gripsholm
-	//----------------------
-	var jan_fridegard_gripsholm_contentString =
-		'<div id="content">'+
-		 '<div id="siteNotice">'+
-				'</div>'+
+//----------------------
+// Jan Fridegård, Gripsholm
+//----------------------
+var jan_fridegard_gripsholm_contentString =
+	'<div id="content">'+
+		'<div id="siteNotice">'+
+			'</div>'+
 				'<h4 id="firstHeading" class="firstHeading">Jan Fridegård</h4>'+
 				'<div id="bodyContent" style="overflow:hidden;">'+
 					'<div class="infoviewImage" style="float:left; width:160px;"><a href="pages/jan_fridegard.html"><img src="pics/jan_fridegard/Jan_Fridegard_foto_Nationalmuseum_map.png" alt="Jan Fridegård" style="height:200px; align:center"></a></div>' +
 					'<div style="overflow:hidden;"><p>Statyn på <b>Jan Fridegård</b> finns i Gripsholm</p>'+
 					'<p>Klicka <a href="pages/jan_fridegard.html">här</a> för mer information</p>' +
 					'<p><a href="https://www.google.com/maps/search/?api=1&query=59.256169,17.219195">Hitta hit</a></p></div>'+
-					'<p>Foto: Nationalmuseum</p>'
-				'</div>'+
-			'</div>';
+				'<p>Foto: Nationalmuseum</p>'
+			'</div>'+
+		'</div>';
 
-	//----------------------
-	// Jan Fridegård, Gripsholm
-	//----------------------
-	var erik_asklund_contentString =
-		'<div id="content">'+
-		 '<div id="siteNotice">'+
-				'</div>'+
-				'<h4 id="firstHeading" class="firstHeading">Erik Asklund</h4>'+
-				'<div id="bodyContent" style="overflow:hidden;">'+
-					'<div class="infoviewImage" style="float:left; width:160px;"><a href="pages/erik_asklund.html"><img src="pics/erik_asklund/Erik_Asklund_map.png" alt="Erik Asklund" style="height:200px; align:center"></a></div>' +
-					'<div style="overflow:hidden;"><p>Statyn på <b>Erik Asklund</b> finns på Nationalmuseumet</p>'+
-					'<p>Klicka <a href="pages/erik_asklund.html">här</a> för mer information</p>' +
-					'<p><a href="https://www.google.com/maps/search/?api=1&query=59.328637,18.078264">Hitta hit</a></p></div>'+
-					'<p>Foto: Nationalmuseum</p>'
-				'</div>'+
-			'</div>';
+//----------------------
+// Johannes Edfeldt, Gripsholm
+//----------------------
+var johannes_edfeldt_contentString =
+'<div id="content">'+
+ '<div id="siteNotice">'+
+		'</div>'+
+		'<h4 id="firstHeading" class="firstHeading">Johannes Edfeldt</h4>'+
+		'<div id="bodyContent" style="overflow:hidden;">'+
+			'<div class="infoviewImage" style="float:left; width:160px;"><a href="pages/johannes_edfeldt.html"><img src="pics/johannes_edfeldt/Johannes_Edfelt_map.jpg" alt="Johannes Edfeldt" style="height:200px; align:center"></a></div>' +
+			'<div style="overflow:hidden;"><p>Statyn på <b>Johannes Edfeldt</b> finns i Gripsholm</p>'+
+			'<p>Klicka <a href="pages/johannes_edfeldt.html">här</a> för mer information</p>' +
+			'<p><a href="https://www.google.com/maps/search/?api=1&query=59.256169,17.219195">Hitta hit</a></p></div>'+
+			'<p>Foto: Skara gamla bibliotek</p>'
+		'</div>'+
+	'</div>';
+
+//----------------------
+// erik_asklund,
+//----------------------
+var erik_asklund_contentString =
+	'<div id="content">'+
+	 '<div id="siteNotice">'+
+			'</div>'+
+			'<h4 id="firstHeading" class="firstHeading">Erik Asklund</h4>'+
+			'<div id="bodyContent" style="overflow:hidden;">'+
+				'<div class="infoviewImage" style="float:left; width:160px;"><a href="pages/erik_asklund.html"><img src="pics/erik_asklund/Erik_Asklund_map.png" alt="Erik Asklund" style="height:200px; align:center"></a></div>' +
+				'<div style="overflow:hidden;"><p>Statyn på <b>Erik Asklund</b> finns på Nationalmuseumet</p>'+
+				'<p>Klicka <a href="pages/erik_asklund.html">här</a> för mer information</p>' +
+				'<p><a href="https://www.google.com/maps/search/?api=1&query=59.328637,18.078264">Hitta hit</a></p></div>'+
+				'<p>Foto: Nationalmuseum</p>'
+			'</div>'+
+		'</div>';
 
 //----------------------Content text for the info windows-------------------------
 //-----------------------------------End------------------------------------------
@@ -170,9 +187,10 @@ var picsList = [
   imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",imageTextSmall:null,
   lat: 59.395572, lng: 19.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null},
 
-  {name: "Skulptur 1", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/512px-skulptur_001_mod.png", altName: "", imageStyle: "width:100%;",
-  imageText: "Bildtext",imageTextSmall:null,
-  lat: 58.912363, lng: 15.616854, title: "Staty i Linköping", info: statue_001_contentString, pinColor: null},
+  {name: "Johannes Edfeldt", pagesLoc: "pages/johannes_edfeldt.html", className: "statues", imageLoc: "pics/johannes_edfeldt/Johannes_Edfelt_slide.jpg", altName: "Johannes Edfeldt", imageStyle: "width:100%;",
+  imageText: "Porträttbyst 1946 i gips samt gjuten i brons, höjd 50 cm.",imageTextSmall:"Foto: Skara gamla bibliotek",
+  lat: 59.256159, lng: 17.219195, title: "Johannes Edfeldt", info: johannes_edfeldt_contentString, pinColor: null},
+	//Org. lat: 59.256169 (changes to lat: 59.256159 for the map to be usable)
 
   {name: "Maj", pagesLoc: "pages/maj.html", className: "statues" ,imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageStyle: "width:100%;",
   imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",imageTextSmall:null,

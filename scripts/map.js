@@ -157,7 +157,6 @@ function setMarkers(map,locations){
 				title: location.title
 			});
 		}
-
 		if (location.info!=null) {
 			google.maps.event.addListener(marker, 'click', function(evt) {
 				infoWin.setContent(location.info);
@@ -169,7 +168,7 @@ function setMarkers(map,locations){
 
 	// Add a marker clusterer to manage the markers.
 	var markerCluster = new MarkerClusterer(map, markers, {
-		maxZoom: 6,
+		maxZoom: 12,
 		gridSize: 30,
 		imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
 	});
