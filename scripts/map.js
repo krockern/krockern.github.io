@@ -140,6 +140,13 @@ function setMarkers(map,locations){
 
 
 	var infoWin = new google.maps.InfoWindow();
+
+	var oms = new OverlappingMarkerSpiderfier(map, {
+	  markersWontMove: true,
+	  markersWontHide: true,
+	  basicFormatEvents: true
+	});
+
 	// Note: The code uses the JavaScript Array.prototype.map() method to
 	// create an array of markers based on a given "locations" array.
 	// The map() method here has nothing to do with the Google Maps API.
@@ -157,18 +164,37 @@ function setMarkers(map,locations){
 				title: location.title
 			});
 		}
-		if (location.info!=null) {
+/*		if (location.info!=null) {
 			google.maps.event.addListener(marker, 'click', function(evt) {
 				infoWin.setContent(location.info);
 				infoWin.open(map, marker);
 			})
+		}*/
+		if (location.info!=null) {
+			google.maps.event.addListener(marker, 'spider_click', function(evt) {
+				infoWin.setContent(location.info);
+				infoWin.open(map, marker);
+			})
 		}
+
+		/*oms.addListener('format', function(marker, status) {
+		  var iconURL = status == OverlappingMarkerSpiderfier.markerStatus.SPIDERFIED ? 'images/marker-highlight.svg' :
+		    status == OverlappingMarkerSpiderfier.markerStatus.SPIDERFIABLE ? 'images/marker-plus.svg' :
+		    status == OverlappingMarkerSpiderfier.markerStatus.UNSPIDERFIABLE ? 'images/marker.svg' :
+		    null;
+		  marker.setIcon({
+		    url: iconURL,
+		    scaledSize: new google.maps.Size(23, 32)  // makes SVG icons work in IE
+		  });
+		});*/
+
+		oms.addMarker(marker);
 		return marker;
 	});
 
 	// Add a marker clusterer to manage the markers.
 	var markerCluster = new MarkerClusterer(map, markers, {
-		maxZoom: 12,
+		maxZoom: 10,
 		gridSize: 30,
 		imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
 	});

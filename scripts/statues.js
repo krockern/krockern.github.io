@@ -138,6 +138,22 @@ var erik_asklund_contentString =
 			'</div>'+
 		'</div>';
 
+//----------------------
+// hjalmar_branting,
+//----------------------
+var hjalmar_branting_contentString =
+	'<div id="content">'+
+	 '<div id="siteNotice">'+
+			'</div>'+
+			'<h4 id="firstHeading" class="firstHeading">Hjalmar Branting</h4>'+
+			'<div id="bodyContent" style="overflow:hidden;">'+
+				'<div class="infoviewImage" style="float:left; width:160px;"><a href="pages/hjalmar_branting.html"><img src="pics/hjalmar_branting/256px-Hjalmar_Branting,_byst_av_Per_Emil_Näsvall,_Malmö.jpg" alt="Hjalmar Branting" style="height:200px; align:center"></a></div>' +
+				'<div style="overflow:hidden;"><p>Statyn på <b>Hjalmar Branting</b> finns i Malmö Folkets Park</p>'+
+				'<p>Klicka <a href="pages/hjalmar_branting.html">här</a> för mer information</p>' +
+				'<p><a href="https://www.google.com/maps/search/?api=1&query=55.594400,13.013967">Hitta hit</a></p></div>'+
+				'<p>Bildkälla: Wikimedia Commons</p>'
+			'</div>'+
+		'</div>';
 //----------------------Content text for the info windows-------------------------
 //-----------------------------------End------------------------------------------
 
@@ -175,6 +191,10 @@ var picsList = [
   imageText: "Porträttbyst 1946 i gips, höjd 54 cm.", imageTextSmall:"Foto: Nationalmuseum",
   lat: 59.328637, lng: 18.078264, title: "Erik Asklund", info: erik_asklund_contentString, pinColor: null},
 
+	{name: "Hjalmar Branting", pagesLoc: "pages/hjalmar_branting.html", className: "statues", imageLoc: "pics/hjalmar_branting/512px-Hjalmar_Branting,_byst_av_Per_Emil_Näsvall,_Malmö.jpg", altName: "Hjalmar Branting", imageStyle: "width:100%;",
+  imageText: "Porträttbyst 1948 i svart Immeln-granit, höjd 80 cm.", imageTextSmall:null,
+  lat: 55.594400, lng: 13.013967, title: "Hjalmar Branting", info: hjalmar_branting_contentString, pinColor: null},
+
   {name: "Per Albin Hansson", pagesLoc: "pages/per_albin_hansson.html", className: "statues", imageLoc: "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", altName: "Per Albin Hansson", imageStyle: "width:100%;",
   imageText: "Bildtext Morbi eget malesuada lorem. Integer facilisis tellus eu enim feugiat maximus. Ut posuere erat vitae dolor ullamcorpereuismod. Vivamus quis neque erat. Maecenas id porta justo. Integer porta in nunc id cursus. Nulla tempor auctor auctor.Fusce ligula mauris, finibus eget sem vitae, vestibulum",imageTextSmall:null,
   lat: 59.372830, lng: 16.482146, title: "Per Albin Hansson", info: per_albin_hansson_contentString, pinColor: null},
@@ -189,7 +209,7 @@ var picsList = [
 
   {name: "Johannes Edfeldt", pagesLoc: "pages/johannes_edfeldt.html", className: "statues", imageLoc: "pics/johannes_edfeldt/Johannes_Edfelt_slide.jpg", altName: "Johannes Edfeldt", imageStyle: "width:100%;",
   imageText: "Porträttbyst 1946 i gips samt gjuten i brons, höjd 50 cm.",imageTextSmall:"Foto: Skara gamla bibliotek",
-  lat: 59.256159, lng: 17.219195, title: "Johannes Edfeldt", info: johannes_edfeldt_contentString, pinColor: null},
+  lat: 59.256169, lng: 17.219195, title: "Johannes Edfeldt", info: johannes_edfeldt_contentString, pinColor: null},
 	//Org. lat: 59.256169 (changes to lat: 59.256159 for the map to be usable)
 
   {name: "Maj", pagesLoc: "pages/maj.html", className: "statues" ,imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageStyle: "width:100%;",
