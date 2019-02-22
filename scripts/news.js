@@ -23,6 +23,23 @@ var newsFeed = [
   "dolor. Sed risus orci, efficitur nec facilisis quis, laoreet non odio. Quisque sed tellus velit. Proin accumsan leo ante, id tincidunt tellus " +
   "egestas id."},
 
+  {newsHeading:"2019-01-11",
+  newsText:"I mars kommer det komma en genomgång av Emils liv som en film. Den kommer komma upp på den här sidan när den är klar. Lorem ipsum dolor sit amet, " +
+  "consectetur adipiscing elit. Nunc commodo justo at justo lobortis efficitur eget et arcu. Nullam sed mauris dignissim, euismod lectus ac, tristique dolor. Sed risus orci, " +
+  "efficitur nec facilisis quis, laoreet non odio. Quisque sed tellus velit. Proin accumsan leo ante, id tincidunt tellus egestas id."},
+
+  {newsHeading:"2019-01-02",
+  newsText:"Test av ny nyhetsdel. Ska se om detta är något att ha. Test av ny nyhetsdel. Ska se om detta är något att ha. Test av ny nyhetsdel. Ska se om detta är något att ha. Lorem ipsum dolor sit amet, " +
+  "consectetur adipiscing elit. Nunc commodo justo at justo lobortis efficitur eget et arcu. Nullam sed mauris dignissim, euismod lectus ac, tristique " +
+	"dolor. Sed risus orci, efficitur nec facilisis quis, laoreet non odio. Quisque sed tellus velit. Proin accumsan leo ante, id tincidunt tellus " +
+  "egestas id."},
+
+  {newsHeading:"2019-01-01",
+  newsText:"Test av ny nyhetsdel. Ska se om detta är något att ha. Lorem ipsum dolor sit amet, " +
+  "consectetur adipiscing elit. Nunc commodo justo at justo lobortis efficitur eget et arcu. Nullam sed mauris dignissim, euismod lectus ac, tristique " +
+  "dolor. Sed risus orci, efficitur nec facilisis quis, laoreet non odio. Quisque sed tellus velit. Proin accumsan leo ante, id tincidunt tellus " +
+  "egestas id."},
+
   {newsHeading:"2018-12-10",
   newsText:"Test av ny nyhetsdel. Ska se om detta är något att ha. Lorem ipsum dolor sit amet, " +
   "consectetur adipiscing elit. Nunc commodo justo at justo lobortis efficitur eget et arcu. Nullam sed mauris dignissim, euismod lectus ac, tristique " +
