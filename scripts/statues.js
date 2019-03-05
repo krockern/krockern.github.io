@@ -9,6 +9,18 @@ var statue_001_contentString = null;
 //----------------------
 // Per Albin Hansson, Parken Zoo, Eskilstuna
 //----------------------
+//var per_albin_hansson_contentString =
+//	'<div id="content">'+
+//		'<div id="siteNotice">'+
+//		'</div>'+
+//		'<h4 id="firstHeading" class="firstHeading">Per Albin Hansson</h4>'+
+//		'<div id="bodyContent" style="overflow:hidden;">'+
+//			'<div class="infoviewImage" style="float:left; width:160px;"><a href="pages/per_albin_hansson.html"><img src="pics/per_albin_hansson/256px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG" alt="Per Albin Hansson" style="width:150px; align:center;"></a></div>' +
+//			'<div style="overflow:hidden;"><p>Byst av <b>Per Albin Hansson</b> i Parken Zoo i Eskilstuna</p>'+
+//			'<p>Klicka <a href="pages/per_albin_hansson.html">här</a> för mer information</p>' +
+//			'<p><a href="https://www.google.com/maps/search/?api=1&query=59.372830,16.482146">Hitta hit</a></p></div>'+
+//		'</div>'+
+//	'</div>';
 var per_albin_hansson_contentString =
 	'<div id="content">'+
 		'<div id="siteNotice">'+
@@ -16,9 +28,9 @@ var per_albin_hansson_contentString =
 		'<h4 id="firstHeading" class="firstHeading">Per Albin Hansson</h4>'+
 		'<div id="bodyContent" style="overflow:hidden;">'+
 			'<div class="infoviewImage" style="float:left; width:160px;"><a href="pages/per_albin_hansson.html"><img src="pics/per_albin_hansson/256px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG" alt="Per Albin Hansson" style="width:150px; align:center;"></a></div>' +
-			'<div style="overflow:hidden;"><p>Byst av <b>Per Albin Hansson</b> i Parken Zoo i Eskilstuna</p>'+
-			'<p>Klicka <a href="pages/per_albin_hansson.html">här</a> för mer information</p>' +
-			'<p><a href="https://www.google.com/maps/search/?api=1&query=59.372830,16.482146">Hitta hit</a></p></div>'+
+			'<div style="overflow:hidden;"><p>Byst av <b>Per Albin Hansson</b> finns i <a href="https://www.google.com/maps/search/?api=1&query=59.372830,16.482146">Parken Zoo i Eskilstuna</a><br> '+
+			'samt i <a href="https://goo.gl/maps/VGtszvCoKYo">Malmö Folkets Park</a>.</p>' +
+			'<p>Klicka <a href="pages/per_albin_hansson.html">här</a> för mer information</p></div>'+
 		'</div>'+
 	'</div>';
 
@@ -154,6 +166,24 @@ var hjalmar_branting_contentString =
 				'<p>Bildkälla: Wikimedia Commons</p>'
 			'</div>'+
 		'</div>';
+
+//----------------------
+// jussi_bjorling
+//----------------------
+var jussi_bjorling_contentString =
+	'<div id="content">'+
+	 '<div id="siteNotice">'+
+			'</div>'+
+			'<h4 id="firstHeading" class="firstHeading">Jussi Björling</h4>'+
+			'<div id="bodyContent" style="overflow:hidden;">'+
+				'<div class="infoviewImage" style="float:left; width:160px;"><a href="pages/jussi_bjorling.html"><img src="pics/jussi_bjorling/jussi_bjorling_slide.jpg" alt="Jussi Björling" style="height:200px; align:center"></a></div>' +
+				'<div style="overflow:hidden;"><p>Finns i <a href="https://goo.gl/maps/DM43BAmegAH2">Kungliga Operans konstsamling</a></p>' +
+				'<p>Den finns också i Borlänge <a href="https://goo.gl/maps/L2pPmd2Crzz">Folkets Hus</a></p></div>'+
+				'<p>Foto: Kungliga Operan i Stockholm</p>'
+			'</div>'+
+		'</div>';
+
+
 //----------------------Content text for the info windows-------------------------
 //-----------------------------------End------------------------------------------
 
@@ -201,7 +231,11 @@ var picsList = [
 
   {name: "Per Albin Hansson", pagesLoc: "pages/per_albin_hansson.html", className: "statues", imageLoc: "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", altName: "Per Albin Hansson", imageStyle: "width:100%;",
   imageText: "Bildtext",imageTextSmall:null,
-  lat: 58.372830, lng: 16.482146, title: "Per Albin Hansson", info: per_albin_hansson_contentString, pinColor: null},
+  lat: 55.593541, lng: 13.014121, title: "Per Albin Hansson", info: per_albin_hansson_contentString, pinColor: null},
+
+	{name: "Jussi Björling", pagesLoc: "pages/jussi_bjorling.html", className: "statues", imageLoc: "pics/jussi_bjorling/jussi_bjorling_slide.jpg", altName: "Jussi Björling", imageStyle: "width:100%;",
+  imageText: "Bildtext",imageTextSmall:null,
+  lat: 59.330389, lng: 18.070461, title: "Jussi Björling", info: jussi_bjorling_contentString, pinColor: null},
 
   {name: "Maj", pagesLoc: "pages/maj.html", className: "statues" ,imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageStyle: "width:100%;",
   imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",imageTextSmall:null,
@@ -219,10 +253,6 @@ var picsList = [
   {name: "Skulptur 1", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/512px-skulptur_001_mod.png", altName: "", imageStyle: "width:100%;",
   imageText: "Bildtext",imageTextSmall:null,
   lat: 58.412363, lng: 15.616854, title: "Staty i Linköping", info: statue_001_contentString, pinColor: null},
-
-  {name: "Per Albin Hansson", pagesLoc: "pages/per_albin_hansson.html", className: "statues", imageLoc: "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", altName: "Per Albin Hansson", imageStyle: "width:100%;",
-  imageText: "Bildtext",imageTextSmall:null,
-  lat: 59.372830, lng: 26.482146, title: "Per Albin Hansson", info: per_albin_hansson_contentString, pinColor: null},
 
   {name: "Maj", pagesLoc: "pages/maj.html", className: "statues", imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageStyle: "width:100%;",
   imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",imageTextSmall:null,
