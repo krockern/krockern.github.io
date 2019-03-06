@@ -202,89 +202,90 @@ lng: longitude coordinate for the map
 title: marker title on the map
 info: a separate var for the popup info window on the map, see above
 pinColor: color for the marker pin on the map (set null if red, eg. 007569 for green)
+include: false if to ignore in the slideshow, false otherwise
 }*/
 
 var picsList = [
   {name: "Jan Fridegård", pagesLoc: "pages/jan_fridegard.html", className: "statues", imageLoc: "pics/jan_fridegard/Jan_Fridegard_foto_Nationalmuseum_slide.png", altName: "Jan Fridegård", imageStyle: "width:100%;",
   imageText: "Porträttbyst 1934 i förgylld gips, höjd 38 cm.", imageTextSmall:"Foto: Nationalmuseum",
-  lat: 59.256169, lng: 17.219195, title: "Jan Fridegård", info: jan_fridegard_gripsholm_contentString, pinColor: null},
+  lat: 59.256169, lng: 17.219195, title: "Jan Fridegård", info: jan_fridegard_gripsholm_contentString, pinColor: null, include: true},
 
 	{name: "Nils Ferlin", pagesLoc: "pages/nils_ferlin.html", className: "statues", imageLoc: "pics/nils_ferlin/Nils_Ferlin_slide.png", altName: "Nils Ferlin", imageStyle: "width:100%;",
   imageText: "Porträttbyst 1934 i förgylld gips, höjd 50 cm.", imageTextSmall:"Bildkälla: Stockholms Auktionsverk",
-  lat:null, lng:null, title:null, info:null , pinColor: null},
+  lat:null, lng:null, title:null, info:null , pinColor: null, include: true},
 
 	{name: "Ivar Lo-Johansson", pagesLoc: "pages/ivar_lo-johansson.html", className: "statues", imageLoc: "pics/ivar_lo-johansson/Ivar_Lo-Johansson_slide.png", altName: "Ivar Lo-Johansson", imageStyle: "width:100%;",
   imageText: "Porträttbyst 1934 i patinerad gips, höjd 50 cm.", imageTextSmall:"Foto: Bonniers porträttsamling Nedre Manilla",
-  lat:null, lng:null, title:null, info:null , pinColor: null},
+  lat:null, lng:null, title:null, info:null , pinColor: null, include: true},
 
   {name: "Erik Asklund", pagesLoc: "pages/erik_asklund.html", className: "statues", imageLoc: "pics/erik_asklund/Erik_Asklund_slide.png", altName: "Erik Asklund", imageStyle: "width:100%;",
   imageText: "Porträttbyst 1946 i gips, höjd 54 cm.", imageTextSmall:"Foto: Nationalmuseum",
-  lat: 59.328637, lng: 18.078264, title: "Erik Asklund", info: erik_asklund_contentString, pinColor: null},
+  lat: 59.328637, lng: 18.078264, title: "Erik Asklund", info: erik_asklund_contentString, pinColor: null, include: true},
 
 	{name: "Hjalmar Branting", pagesLoc: "pages/hjalmar_branting.html", className: "statues", imageLoc: "pics/hjalmar_branting/512px-Hjalmar_Branting,_byst_av_Per_Emil_Näsvall,_Malmö.jpg", altName: "Hjalmar Branting", imageStyle: "width:100%;",
   imageText: "Porträttbyst 1948 i svart Immeln-granit, höjd 80 cm.", imageTextSmall:null,
-  lat: 55.594400, lng: 13.013967, title: "Hjalmar Branting", info: hjalmar_branting_contentString, pinColor: null},
+  lat: 55.594400, lng: 13.013967, title: "Hjalmar Branting", info: hjalmar_branting_contentString, pinColor: null, include: true},
 
   {name: "Per Albin Hansson", pagesLoc: "pages/per_albin_hansson.html", className: "statues", imageLoc: "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", altName: "Per Albin Hansson", imageStyle: "width:100%;",
   imageText: "Bildtext Morbi eget malesuada lorem. Integer facilisis tellus eu enim feugiat maximus. Ut posuere erat vitae dolor ullamcorpereuismod. Vivamus quis neque erat. Maecenas id porta justo. Integer porta in nunc id cursus. Nulla tempor auctor auctor.Fusce ligula mauris, finibus eget sem vitae, vestibulum",imageTextSmall:null,
-  lat: 59.372830, lng: 16.482146, title: "Per Albin Hansson", info: per_albin_hansson_contentString, pinColor: null},
+  lat: 59.372830, lng: 16.482146, title: "Per Albin Hansson", info: per_albin_hansson_contentString, pinColor: null, include: true},
 
   {name: "Per Albin Hansson", pagesLoc: "pages/per_albin_hansson.html", className: "statues", imageLoc: "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", altName: "Per Albin Hansson", imageStyle: "width:100%;",
   imageText: "Bildtext",imageTextSmall:null,
-  lat: 55.593541, lng: 13.014121, title: "Per Albin Hansson", info: per_albin_hansson_contentString, pinColor: null},
+  lat: 55.593541, lng: 13.014121, title: "Per Albin Hansson", info: per_albin_hansson_contentString, pinColor: null, include: false},
 
 	{name: "Jussi Björling", pagesLoc: "pages/jussi_bjorling.html", className: "statues", imageLoc: "pics/jussi_bjorling/jussi_bjorling_slide.jpg", altName: "Jussi Björling", imageStyle: "width:100%;",
   imageText: "Bildtext",imageTextSmall:null,
-  lat: 59.330389, lng: 18.070461, title: "Jussi Björling", info: jussi_bjorling_contentString, pinColor: null},
+  lat: 59.330389, lng: 18.070461, title: "Jussi Björling", info: jussi_bjorling_contentString, pinColor: null, include: true},
 
   {name: "Maj", pagesLoc: "pages/maj.html", className: "statues" ,imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageStyle: "width:100%;",
   imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",imageTextSmall:null,
-  lat: 59.395572, lng: 19.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null},
+  lat: 59.395572, lng: 19.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null, include: true},
 
   {name: "Johannes Edfeldt", pagesLoc: "pages/johannes_edfeldt.html", className: "statues", imageLoc: "pics/johannes_edfeldt/Johannes_Edfelt_slide.jpg", altName: "Johannes Edfeldt", imageStyle: "width:100%;",
   imageText: "Porträttbyst 1946 i gips samt gjuten i brons, höjd 50 cm.",imageTextSmall:"Foto: Skara gamla bibliotek",
-  lat: 59.256169, lng: 17.219195, title: "Johannes Edfeldt", info: johannes_edfeldt_contentString, pinColor: null},
+  lat: 59.256169, lng: 17.219195, title: "Johannes Edfeldt", info: johannes_edfeldt_contentString, pinColor: null, include: true},
 	//Org. lat: 59.256169 (changes to lat: 59.256159 for the map to be usable)
 
   {name: "Maj", pagesLoc: "pages/maj.html", className: "statues" ,imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageStyle: "width:100%;",
   imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",imageTextSmall:null,
-  lat: 59.395572, lng: 18.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null},
+  lat: 59.395572, lng: 18.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null, include: false},
 
   {name: "Skulptur 1", pagesLoc: "pages/blank.html", className: "statues", imageLoc: "pics/512px-skulptur_001_mod.png", altName: "", imageStyle: "width:100%;",
   imageText: "Bildtext",imageTextSmall:null,
-  lat: 58.412363, lng: 15.616854, title: "Staty i Linköping", info: statue_001_contentString, pinColor: null},
+  lat: 58.412363, lng: 15.616854, title: "Staty i Linköping", info: statue_001_contentString, pinColor: null, include: true},
 
   {name: "Maj", pagesLoc: "pages/maj.html", className: "statues", imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageStyle: "width:100%;",
   imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",imageTextSmall:null,
-  lat: 49.395572, lng: 15.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null},
+  lat: 49.395572, lng: 15.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null, include: false},
 
   {name: "Per Albin Hansson", pagesLoc: "pages/per_albin_hansson.html", className: "statues", imageLoc: "pics/per_albin_hansson/512px-Byst_av_nämndeman_Per_Albin_Hansson,_av_Emil_Näsvall.JPG", altName: "Per Albin Hansson", imageStyle: "width:100%;",
   imageText: "Bildtext",imageTextSmall:null,
-  lat: 59.372830, lng: 17.482146, title: "Per Albin Hansson", info: per_albin_hansson_contentString, pinColor: null},
+  lat: 59.372830, lng: 17.482146, title: "Per Albin Hansson", info: per_albin_hansson_contentString, pinColor: null, include: false},
 
   {name: "Maj", pagesLoc: "pages/maj.html", className: "statues", imageLoc: "pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", altName: "Maj", imageStyle: "width:100%;",
   imageText: "Denna staty av Maj kan hittas i Danderyd, Stockholm",imageTextSmall:null,
-  lat: 59.395572, lng: 18.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null},
+  lat: 59.395572, lng: 18.037009, title: "Maj i Danderyd", info: maj_danderyd_contentString, pinColor: null, include: false},
 
 	{name: "Maj", pagesLoc: "pages/maj.html", className: "statues", imageLoc: "pics/maj-soderhamn/512px-Maj_Strykjarnsparken_mod.jpg", altName: "Maj", imageStyle: "width:100%;",
   imageText: "Denna staty av Maj kan hittas i Strykjärnsparken, Söderhamn",imageTextSmall:null,
-  lat: 61.301874, lng: 17.054075, title: "Maj i Strykjärnsparken", info: maj_strykjarnsparken_contentString, pinColor: null},
+  lat: 61.301874, lng: 17.054075, title: "Maj i Strykjärnsparken", info: maj_strykjarnsparken_contentString, pinColor: null, include: false},
 
 	{name: "Maj", pagesLoc: "pages/maj.html", className: "statues", imageLoc: "pics/maj-bukowskis/9067830_bukobject_mod.jpg", altName: "Maj", imageStyle: "width:100%;",
   imageText: "",imageTextSmall:"Foto: Bukowskis",
-  lat:null, lng:null, title:null, info:null , pinColor: null},
+  lat:null, lng:null, title:null, info:null , pinColor: null, include: true},
 
 	{name: "Trappan", pagesLoc: null, className: "statues", imageLoc: "pics/trappan/10377249_bukobject_mod.jpg", altName: "Trappan", imageStyle: "width:100%;",
   imageText: "",imageTextSmall:"Foto: Bukowskis",
-  lat:null, lng:null, title:null, info:null , pinColor: null},
+  lat:null, lng:null, title:null, info:null , pinColor: null, include: true},
 
 	{name: null, pagesLoc: null, className: "statues", imageLoc: "pics/unnamed/9089574_bukobject_mod2.jpg", altName: "", imageStyle: "width:100%;",
   imageText: "",imageTextSmall:"Foto: Bukowskis",
-  lat:null, lng:null, title:null, info:null , pinColor: null},
+  lat:null, lng:null, title:null, info:null , pinColor: null, include: true},
 
 	{name: null, pagesLoc: null, className: "statues", imageLoc: "pics/unnamed/10178877_bukobject_mod2.jpg", altName: "", imageStyle: "width:100%;",
   imageText: "",imageTextSmall:"Foto: Bukowskis",
-  lat:null, lng:null, title:null, info:null , pinColor: null}
+  lat:null, lng:null, title:null, info:null , pinColor: null, include: true}
 
 ];
 
