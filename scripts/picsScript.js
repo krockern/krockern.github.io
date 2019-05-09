@@ -1,3 +1,5 @@
+
+
 /*
 var picsList = [["Skulptur 1", "pages/blank.html", "statues", "pics/512px-skulptur_001_mod.png","", "width:100%","Bildtext"],
 ["Maj", "pages/maj.html", "statues" ,"pics/maj-danderyd/512px-Emil_Näsvall_Maj_mod.JPG", "Maj", "width:100%","Denna staty av Maj kan hittas i Danderyd, Stockholm"],
@@ -18,6 +20,23 @@ var picsList = [["Skulptur 1", "pages/blank.html", "statues", "pics/512px-skulpt
 ***************************/
 function picsGallery(rowSize) {
 
+  //console.log(picsList);
+  //var picsList2 = getStatues();
+  var picsList = [];
+  getStatues().then(function(result) {
+    //console.log(JSON.parse(result));
+    picsList = JSON.parse(result);
+    console.log(picsList);
+      console.log(picsList.length);
+    //return resultArray;
+
+
+  //picsList3 = getStatues();
+
+
+  /*for (var x in picsList2) {
+    console.log("*************" + x.name);
+  }*/
   if (rowSize == 4) { var screenDiv = document.getElementById("largePicsGal"); }
   else if (rowSize == 3) { var screenDiv = document.getElementById("mediumPicsGal"); }
   else if (rowSize == 1) { var screenDiv = document.getElementById("smallPicsGal"); }
@@ -107,7 +126,11 @@ function picsGallery(rowSize) {
       col++;
     }
   }
+}, function(error) {
+  console.log(error);
+});
 }
+
 
 
 /************************
@@ -221,4 +244,40 @@ function slideshow(rowSize) {
       col++;
     }
   }
+}
+
+//function getStatues() {
+//  var resultArray = [];
+//  request().then(function(result) {
+//    //console.log(JSON.parse(result));
+//    resultArray = JSON.parse(result);
+//    console.log(resultArray);
+//    return resultArray;
+//  }, function(error) {
+//    console.log(error);
+//  });
+  //console.log("ReadyState: " + xmlhttp.readyState);
+  //return resultArray;
+//}
+
+function getStatues() {
+  //var result;
+  var resultArray = [];
+  var xmlhttp = new XMLHttpRequest();
+  return new Promise(function(resolve, reject) {
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4) {
+        if (this.status == 200) {
+
+          resolve(xmlhttp.responseText);
+        } else {
+          reject("D'oh: " + xmlhttp.status);
+        }
+      }
+    }
+
+    xmlhttp.open("GET","../php/getStatues.php",true);
+    xmlhttp.send();
+
+  });
 }
