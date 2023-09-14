@@ -205,7 +205,27 @@ pinColor: color for the marker pin on the map (set null if red, eg. 007569 for g
 include: false if to ignore in the slideshow, false otherwise
 }*/
 
+
 var picsList = [
+	{name: "Bild13", imageLoc: "pics/b13.jpg", className: "statues", altName: "B13", imageStyle: "width:100%;", 
+	imageText: "Hund på rygg", imageTextSmall: "B13", title: "B13", info: "B13", include: true },
+	
+	{name: "Bild14", imageLoc: "pics/b14.jpg", className: "statues", altName: "B14", imageStyle: "width:100%;", 
+	imageText: "Hund i soffa", imageTextSmall: "B13", title: "B13", info: "B13", include: true },
+	
+	{name: "Bild15", imageLoc: "pics/b15.jpg", className: "statues", altName: "B15", imageStyle: "width:100%;", 
+	imageText: "Hund ute", imageTextSmall: "B13", title: "B13", info: "B13", include: true },
+
+	{name: "Bild16", imageLoc: "pics/b16.jpg", className: "statues", altName: "B16", imageStyle: "width:100%;", 
+	imageText: "Hund liggandes med leksak och boll", imageTextSmall: "B13", title: "B13", info: "B13", include: true }
+];
+
+
+
+
+
+
+/*var picsList = [
   {name: "Jan Fridegård", pagesLoc: "pages/jan_fridegard.html", className: "statues", imageLoc: "pics/jan_fridegard/Jan_Fridegard_foto_Nationalmuseum_slide.png", altName: "Jan Fridegård", imageStyle: "width:100%;",
   imageText: "Porträttbyst 1934 i förgylld gips, höjd 38 cm.", imageTextSmall:"Foto: Nationalmuseum",
   lat: 59.256169, lng: 17.219195, title: "Jan Fridegård", info: jan_fridegard_gripsholm_contentString, pinColor: null, include: true},
@@ -287,7 +307,7 @@ var picsList = [
   imageText: "",imageTextSmall:"Foto: Bukowskis",
   lat:null, lng:null, title:null, info:null , pinColor: null, include: true}
 
-];
+];*/
 
 
 /*{

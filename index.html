@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="sv">
 	<head>
-		<title>Nasvall early alpha</title>
+		<title>Starpeppers</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
-		<link rel="stylesheet" type="text/css" href="css/w3.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<!--<link rel="stylesheet" type="text/css" href="css/w3.css">-->
 		<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/OverlappingMarkerSpiderfier/1.0.3/oms.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -25,13 +25,13 @@
 	<!-- Navbar (sit on top) -->
 	<div class="w3-top own-top">
 		<div class="w3-bar w3-white w3-wide w3-padding w3-card">
-			<a href="#home" class="w3-bar-item w3-button"><b>Emil</b> Näsvall</a>
+			<a href="#home" class="w3-bar-item w3-button">Kennel <b>Starpeppers</b></a>
 			<!-- Float links to the right. Hide them on small screens -->
 			<div class="w3-right w3-hide-small w3-hide-medium">
-				<a href="#about" class="w3-bar-item w3-button">Om Emil</a>
-				<a href="#projects" class="w3-bar-item w3-button">Konstverk</a>
+				<a href="#info" class="w3-bar-item w3-button">Information</a>
+				<a href="#dogs" class="w3-bar-item w3-button">Hundar</a>
+				<a href="#puppies" class="w3-bar-item w3-button">Valpar</a>
 				<a href="#contact" class="w3-bar-item w3-button">Kontakt</a>
-				<a href="#locations" class="w3-bar-item w3-button">Karta</a>
 			</div>
 
 			<div class="hamburgerContainer w3-right w3-hide-large" id="hamburgerContainer" onclick="hamburgerIcon(this)">
@@ -41,10 +41,10 @@
 			</div>
 			<div class="topnav w3-right w3-hide-large">
 				<ul >
-					<a class="hamburgerItem" href="#about" ><li>Om Emil</li></a>
-					<a class="hamburgerItem" href="#projects" ><li>Konstverk</li></a>
+					<a class="hamburgerItem" href="#info" ><li>Information</li></a>
+					<a class="hamburgerItem" href="#dogs" ><li>Hundar</li></a>
+					<a class="hamburgerItem" href="#puppies" ><li>Valpar</li></a>
 					<a class="hamburgerItem" href="#contact" ><li>Kontakt</li></a>
-					<a class="hamburgerItem" href="#locations" ><li>Karta</li></a>
 				</ul>
 			</div>
 
@@ -53,9 +53,9 @@
 
 	<!-- Header -->
 	<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-		<img class="w3-image" src="pics/header.jpg" alt="Emil" width="1500" height="800">
+		<img class="w3-image" src="pics/FrontPage.jpg" alt="Emil" width="1500" height="800">
 		<div class="w3-display-middle w3-margin-top w3-center">
-			<h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Emil</b></span> <span class="w3-hide-small w3-text-light-grey">Näsvall</span></h1>
+			<h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min">Kennel</span> <span class="w3-hide-small w3-text-light-grey">Starpeppers</span></h1>
 			<h5 class="w3-hide-small w3-text-white quote-style"><span class="w3-padding" id="quotes"></span></h5>
 			<script>randomQuote();</script>
 
@@ -88,12 +88,12 @@
 
 
 		<!-- About Section -->
-		<div class="w3-container w3-padding-32 about_section" id="about">
-			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Om Emil</h3>
+		<div class="w3-container w3-padding-32 about_section" id="info">
+			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Information</h3>
 
 			<div class="w3-col l3 m6 w3-margin-bottom">
 				<div class="w3-display-container w3-margin">
-					<a href="pages/about_page.html"><img src="pics/emil_nasvall/Portratt_Emil_Nasvall_trimmed.jpg" alt="Emil Näsvall" style="width:100%"></a>
+					<a href="pages/about_page.html"><img src="pics/b13.jpg" alt="Emil Näsvall" style="width:100%"></a>
 				</div>
 			</div>
 			<div class="about_text">
@@ -115,8 +115,8 @@
 		</div>
 
 		<!-- Project Section -->
-		<div class="w3-container w3-padding-32" id="projects">
-			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Konstverk</h3>
+		<div class="w3-container w3-padding-32" id="dogs">
+			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><a href="pages/gallery.html">Hundar</a></h3>
 		</div>
 
 		<!-- Slideshow on small screens -->
@@ -165,14 +165,25 @@
 		<div>
 			<p>För att se galleri, tryck <a href="pages/gallery.html">här</a></p>
 
-			<p>För att se en film om Emil Näsvall, tryck <a href="pages/video.html">här</a></p>
 		</div>
 
 		<!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="contact">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Kontakt</h3>
-		<p> Om du vill komma i kontakt med Näsvallsstiftelsen, vänligen skicka ett mail till
-			<a href="mailto:website@nasvall.dodwiki.se">website@nasvall.dodwiki.se</a></p>
+		<div class="w3-half">
+		<p> Carina Pettersson<br>
+			Fridolfsbergsgatan 8<br>
+			54832 Hova<br>
+			070-5290475<br>
+			<a href="mailto:kent.pettersson@gmail.com">kent.pettersson@gmail.com</a></p>
+		</div>
+		<div class="w3-half">
+			<p> Lena Gustavsson<br>
+				Pontonvägen 2<br>
+				547 72 Otterbäcken<br>
+				0551-22084   070-3635996<br>
+				<a href="mailto:lena.b.gustav5424@telia.com"></a>lena.b.gustav5424@telia.com</a></p>
+		</div>
 
     <!--<p>Om du vill komma i kontakt med Näsvallsstiftelsen, vänligen fyll i kontaktformulöret nedan.</p>
     <form action="http://dodwiki.se/nasvall/php/send_mail.php" method="post" target="_parent">
@@ -188,14 +199,13 @@
 
 
 		<!-- Google Map -->
-		<div class="w3-container w3-padding-32" id="locations">
+		<!--<div class="w3-container w3-padding-32" id="locations">
 			<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Karta</h3>
-			<!--<div id="map" class="w3-grayscale" style="width:100%;height:450px;">-->
 			<div id="map" class="w3-grayscale-min" style="width:100%;height:450px;">
 				<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU9WZeAf88YI-2RYmtdwx8Txk_nuRxV9M&callback=initMap">
 				</script>
 			</div>
-		</div>
+		</div>-->
 
 
 	<!-- End page content -->

@@ -22,12 +22,12 @@ function picsGallery(rowSize) {
 
   //console.log(picsList);
   //var picsList2 = getStatues();
-  var picsList = [];
-  getStatues().then(function(result) {
+  //var picsList = [];
+  //getStatues().then(function(result) {
     //console.log(JSON.parse(result));
-    picsList = JSON.parse(result);
-    console.log(picsList);
-      console.log(picsList.length);
+    //picsList = JSON.parse(result);
+    //console.log(picsList);
+      //console.log(picsList.length);
     //return resultArray;
 
 
@@ -82,13 +82,13 @@ function picsGallery(rowSize) {
         picDiv2.appendChild(picDiv3);
       }
 
-      if (picsList[key].imageTextSmall != null) {
+      /*if (picsList[key].imageTextSmall != null) {
         var picDiv4 = document.createElement("div");
         picDiv4.className += "w3-display-bottomright w3-padding"; //w3-black
         picDiv4.setAttribute("style", "color:#fff!important;background-color:rgba(0,0,0,0.5)!important");
         picDiv4.appendChild(document.createTextNode(picsList[key].imageTextSmall));
         picDiv2.appendChild(picDiv4);
-      }
+      }*/
 
       var anchor = document.createElement('a');
       if (picsList[key].pagesLoc != null) {
@@ -126,9 +126,9 @@ function picsGallery(rowSize) {
       col++;
     }
   }
-}, function(error) {
-  console.log(error);
-});
+//}, function(error) {
+  //console.log(error);
+//});
 }
 
 
@@ -203,13 +203,13 @@ function slideshow(rowSize) {
         picDiv2.appendChild(picDiv3);
       }
 
-      if (picsList[key].imageTextSmall != null) {
+      /*if (picsList[key].imageTextSmall != null) {
         var picDiv4 = document.createElement("div");
         picDiv4.className += "w3-display-bottomright w3-padding"; //w3-black
         picDiv4.setAttribute("style", "color:#fff!important;background-color:rgba(0,0,0,0.5)!important");
         picDiv4.appendChild(document.createTextNode(picsList[key].imageTextSmall));
         picDiv2.appendChild(picDiv4);
-      }
+      }*/
 
 
       var anchor = document.createElement('a');
