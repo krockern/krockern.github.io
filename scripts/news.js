@@ -6,16 +6,10 @@ var newsFeed = [
   "egestas id."},
 
   {newsHeading:"2023-09-10",
-  newsText:"Test av ny nyhetsdel. Ska se om detta är något att ha. Test av ny nyhetsdel. Ska se om detta är något att ha. Test av ny nyhetsdel. Ska se om detta är något att ha. Lorem ipsum dolor sit amet, " +
-  "consectetur adipiscing elit. Nunc commodo justo at justo lobortis efficitur eget et arcu. Nullam sed mauris dignissim, euismod lectus ac, tristique " +
-	"dolor. Sed risus orci, efficitur nec facilisis quis, laoreet non odio. Quisque sed tellus velit. Proin accumsan leo ante, id tincidunt tellus " +
-  "egestas id."},
+  newsText:"Äntligen lyckades Busmusens Raka Rör vinne sitt tredje cert under helgens utställning i Långtbortistan."},
 
-  {newsHeading:"2023-02-01",
-  newsText:"Test av ny nyhetsdel. Ska se om detta är något att ha. Lorem ipsum dolor sit amet, " +
-  "consectetur adipiscing elit. Nunc commodo justo at justo lobortis efficitur eget et arcu. Nullam sed mauris dignissim, euismod lectus ac, tristique " +
-  "dolor. Sed risus orci, efficitur nec facilisis quis, laoreet non odio. Quisque sed tellus velit. Proin accumsan leo ante, id tincidunt tellus " +
-  "egestas id."},
+  {newsHeading:"2023-09-01",
+  newsText:"Om några dagar är det äntligen dags för årets utställing i Långtbortistan. Då det är en bit att åka så gäller det att ladda med mycket fläsk."},
 
   {newsHeading:"2023-01-11",
   newsText:"I mars kommer det komma en genomgång av Emils liv som en film. Den kommer komma upp på den här sidan när den är klar. Lorem ipsum dolor sit amet, " +
@@ -73,7 +67,7 @@ function newsScript() {
     var newsTime = (new Date(newsFeed[key].newsHeading + " 00:00:00")).getTime();
 
     console.log("News:   " + newsTime);
-    // If (localTime - 2 months) < newsTime
+    // If (localTime - 18 months) < newsTime
     // or newsTime < localTime
     if (addMonths(localTime, -18) < newsTime && newsTime < localTime) {
 
